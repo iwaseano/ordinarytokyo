@@ -11,7 +11,7 @@ updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
 heroImage: "./images/hero.svg"
 heroAlt: "Editorial illustration of convenience store shelves with onigiri, sandwiches, drinks, and snacks"
-draft: false
+draft: true
 measured:
   - item: "Onigiri (salmon)"
     priceJpy: 0
