@@ -15,6 +15,8 @@ const heroImages = import.meta.glob<{ default: ImageMetadata }>(
 	'/src/assets/articles/**/images/*.{svg,png,jpg,jpeg,webp,avif}',
 	{ eager: true },
 );
+const defaultHeroImage = '/og-default.svg';
+const defaultHeroAlt = `${SITE.name} logo and tagline.`;
 
 export async function getStaticPaths() {
 	const articles = await getCollection('articles', ({ data }) =>
@@ -38,14 +40,16 @@ const readingMinutes = Math.max(
 	1,
 	Math.ceil(article.body.trim().split(/\s+/).length / 220),
 );
-const relativeImage = data.heroImage.replace(/^\.\//, '');
-const heroImagePath = `/src/assets/articles/${data.slug}/${relativeImage}`;
-const heroImageModule = heroImages[heroImagePath];
-const heroImageFormat = data.heroImage.toLowerCase().endsWith('.svg') ? 'svg' : 'webp';
+const relativeImage = data.heroImage?.replace(/^\.\//, '');
+const heroImagePath = relativeImage
+	? `/src/assets/articles/${data.slug}/${relativeImage}`
+	: undefined;
+const heroImageModule = heroImagePath ? heroImages[heroImagePath] : undefined;
+const heroImageFormat = data.heroImage?.toLowerCase().endsWith('.svg') ? 'svg' : 'webp';
 
-if (!heroImageModule) {
-	throw new Error(
-		`Hero image not found for "${data.slug}": expected ${heroImagePath}`,
+if (heroImagePath && !heroImageModule) {
+	console.warn(
+		`Hero image not found for "${data.slug}": expected ${heroImagePath}. Using ${defaultHeroImage}.`,
 	);
 }
 
@@ -131,17 +135,29 @@ const structuredData = JSON.stringify([
 			</div>
 		</header>
 
-		<Image
-			class="article-hero"
-			src={heroImageModule.default}
-			alt={data.heroAlt}
-			width={1200}
-			height={675}
-			format={heroImageFormat}
-			quality={82}
-			loading="eager"
-			fetchpriority="high"
-		/>
+		{heroImageModule ? (
+			<Image
+				class="article-hero"
+				src={heroImageModule.default}
+				alt={data.heroAlt ?? defaultHeroAlt}
+				width={1200}
+				height={675}
+				format={heroImageFormat}
+				quality={82}
+				loading="eager"
+				fetchpriority="high"
+			/>
+		) : (
+			<img
+				class="article-hero"
+				src={defaultHeroImage}
+				alt={defaultHeroAlt}
+				width="1200"
+				height="630"
+				loading="eager"
+				fetchpriority="high"
+			/>
+		)}
 
 		<div class="disclosure">
 			<strong>Disclosure:</strong> This page may contain affiliate links. If you use one,

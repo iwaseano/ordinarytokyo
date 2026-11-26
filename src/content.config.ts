@@ -26,8 +26,8 @@ const articleSchema = z.object({
 	publishedAt: z.coerce.date(),
 	updatedAt: z.coerce.date(),
 	checkedAt: z.coerce.date(),
-	heroImage: z.string().min(1),
-	heroAlt: z.string().min(1),
+	heroImage: z.string().min(1).optional(),
+	heroAlt: z.string().min(1).optional(),
 	draft: z.boolean().default(false),
 	measured: z
 		.array(
@@ -69,7 +69,13 @@ const articleSchema = z.object({
 			}).strict(),
 		)
 		.default([]),
-}).strict();
+}).strict().refine(
+	({ heroImage, heroAlt }) => !heroImage || Boolean(heroAlt),
+	{
+		path: ['heroAlt'],
+		message: 'heroAlt is required when heroImage is specified',
+	},
+);
 
 const articles = defineCollection({
 	loader: glob({ pattern: '**/*.md', base: './src/content/articles' }),
