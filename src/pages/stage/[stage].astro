@@ -1,0 +1,33 @@
+---
+import { getArticlePath, getSortedArticles } from '../../data/articles';
+import { STAGES } from '../../data/site';
+import ArticleList from '../../components/ArticleList.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+export async function getStaticPaths() {
+	const articles = await getSortedArticles();
+	return Object.entries(STAGES).map(([id, stage]) => ({
+		params: { stage: id },
+		props: {
+			stage,
+			articles: articles.filter((article) => article.data.stage === id),
+		},
+	}));
+}
+
+const { stage, articles } = Astro.props;
+---
+
+<SiteLayout title={`${stage.title} Guides | Ordinary Tokyo`} description={stage.description}>
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: stage.title }]} />
+		<header class="page-intro">
+			<p class="eyebrow">Browse by travel stage</p>
+			<h1>{stage.title}</h1>
+			<p>{stage.description}</p>
+		</header>
+		<ArticleList articles={articles} />
+		<p class="small-note"><a href={getArticlePath('konbini-checkout')}>Explore a sample guide</a></p>
+	</div>
+</SiteLayout>

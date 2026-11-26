@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Illustration of ordering at a family restaurant</title>
+  <desc id="description">A table setting, menu, and order button in a Japanese family restaurant.</desc>
+  <rect width="1200" height="675" fill="#edf1f5"/>
+  <rect x="130" y="110" width="940" height="455" rx="28" fill="#fff" stroke="#1f3a5f" stroke-width="8"/>
+  <rect x="215" y="180" width="460" height="290" rx="18" fill="#fae8d8" stroke="#d64533" stroke-width="8"/>
+  <text x="445" y="255" text-anchor="middle" fill="#1f3a5f" font-family="Arial, sans-serif" font-size="38" font-weight="700">MENU</text>
+  <path d="M280 310h330M280 365h260M280 420h300" stroke="#1f3a5f" stroke-linecap="round" stroke-width="16"/>
+  <rect x="755" y="205" width="190" height="245" rx="24" fill="#1f3a5f"/>
+  <rect x="784" y="239" width="132" height="105" rx="10" fill="#edf1f5"/>
+  <circle cx="850" cy="390" r="30" fill="#d64533" stroke="#fff" stroke-width="7"/>
+  <text x="600" y="525" text-anchor="middle" fill="#22252a" font-family="Arial, sans-serif" font-size="30" font-weight="700">A sample ordering scene</text>
+</svg>

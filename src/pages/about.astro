@@ -1,0 +1,37 @@
+---
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { SITE } from '../data/site';
+---
+
+<SiteLayout title={`About | ${SITE.name}`} description="Learn about Ordinary Tokyo and how its practical local guides are made.">
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: 'About' }]} />
+		<header class="page-intro">
+			<p class="eyebrow">About the site</p>
+			<h1>Everyday Tokyo, from a local perspective.</h1>
+		</header>
+		<div class="legal-copy">
+			<h2>Who writes Ordinary Tokyo?</h2>
+			<p>
+				Ordinary Tokyo is written by a Tokyo-based Japanese local. The site focuses on
+				the ordinary shops, services, and routines people use in daily life—not a
+				complete guide to every destination in Japan.
+			</p>
+			<h2>How we make these guides</h2>
+			<p>
+				Published guides should prioritize real-world checks, clear dates, and practical
+				Japanese phrases. A price or detail that has not been personally checked should
+				be identified as unverified. Sample articles on this site are explicitly marked
+				as demonstrations and do not claim a real visit.
+			</p>
+			<h2>Our editorial approach</h2>
+			<ul>
+				<li>Explain everyday places and why local residents use them.</li>
+				<li>Show both what staff may ask and what a visitor can say or show.</li>
+				<li>Focus on chain stores and large retailers; treat small neighborhood businesses carefully.</li>
+				<li>Display a checked date so readers can judge whether details may have changed.</li>
+			</ul>
+		</div>
+	</div>
+</SiteLayout>

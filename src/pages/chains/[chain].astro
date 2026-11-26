@@ -1,0 +1,62 @@
+---
+import { getSortedArticles } from '../../data/articles';
+import { chainInfo } from '../../data/site';
+import ArticleList from '../../components/ArticleList.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+export async function getStaticPaths() {
+	const articles = await getSortedArticles();
+	const chains = [...new Set(articles.flatMap((article) => article.data.chain))].sort();
+	return chains.map((chain) => ({
+		params: { chain },
+		props: {
+			chain,
+			articles: articles.filter((article) => article.data.chain.includes(chain)),
+		},
+	}));
+}
+
+const { chain, articles } = Astro.props;
+const { title: chainTitle, description, localNote } = chainInfo(chain);
+const phraseSummary = [
+	...new Map(
+		articles.flatMap((article) =>
+			article.data.phrasesSay.map((phrase) => [phrase.jp, { phrase, slug: article.data.slug }] as const),
+		),
+	).values(),
+].slice(0, 6);
+---
+
+<SiteLayout title={`${chainTitle} Guides | Ordinary Tokyo`} description={description}>
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: chainTitle }]} />
+		<header class="page-intro">
+			<p class="eyebrow">Chain guide</p>
+			<h1>{chainTitle}</h1>
+			<p>{description}</p>
+		</header>
+		<p class="hero-copy">{localNote}</p>
+		<ArticleList articles={articles} />
+		{
+			phraseSummary.length > 0 && (
+				<section aria-labelledby="chain-phrases">
+					<div class="section-heading">
+						<div>
+							<p class="eyebrow">Useful at this chain</p>
+							<h2 id="chain-phrases">Common phrases</h2>
+						</div>
+					</div>
+					<div class="phrase-list">
+						{phraseSummary.map(({ phrase, slug }) => (
+							<a class="entry-card" href={`/${slug}/#say-this`}>
+								<h3 lang="ja">{phrase.jp}</h3>
+								<p>{phrase.romaji} · {phrase.en}</p>
+							</a>
+						))}
+					</div>
+				</section>
+			)
+		}
+	</div>
+</SiteLayout>

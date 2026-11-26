@@ -1,0 +1,95 @@
+---
+import AdSlot from '../components/AdSlot.astro';
+import ArticleList from '../components/ArticleList.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { getArticlePath, getSortedArticles } from '../data/articles';
+import { DOMAINS, SITE, STAGES } from '../data/site';
+
+const articles = await getSortedArticles();
+const popular = SITE.popularSlugs
+	.map((slug) => articles.find((article) => article.data.slug === slug))
+	.filter((article) => article !== undefined);
+const recent = articles.slice(0, 6);
+---
+
+<SiteLayout title={SITE.name} description={SITE.description} canonicalPath="/">
+	<div class="page-shell">
+		<section class="hero-panel">
+			<div>
+				<p class="eyebrow">Everyday Japan, explained by a local</p>
+				<h1>Feel at home in the everyday side of Tokyo.</h1>
+				<p class="hero-copy">
+					Practical, locally checked guides to the shops, food, and small routines
+					that make daily life in Japan work.
+				</p>
+				<a class="button" href="/stage/first-trip/">Start with your first trip</a>
+			</div>
+			<div class="hero-art" aria-label="Ordinary Tokyo editorial illustration">
+				<div>
+					<strong>東京の日常</strong>
+					<span>Tokyo, one everyday moment at a time</span>
+				</div>
+			</div>
+		</section>
+
+		<section aria-labelledby="stage-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Choose your starting point</p>
+					<h2 id="stage-heading">Guides for your Japan journey</h2>
+				</div>
+			</div>
+			<div class="stage-grid">
+				{Object.entries(STAGES).map(([id, stage]) => (
+					<a class="entry-card" href={`/stage/${id}/`}>
+						<h3>{stage.title}</h3>
+						<p>{stage.description}</p>
+					</a>
+				))}
+			</div>
+		</section>
+
+		<section aria-labelledby="domain-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Explore local life</p>
+					<h2 id="domain-heading">Everyday areas</h2>
+				</div>
+			</div>
+			<div class="domain-grid">
+				{Object.entries(DOMAINS).map(([id, domain]) => (
+					<a class="entry-card" href={`/domain/${id}/`}>
+						<h3>{domain.title}</h3>
+						<p>{domain.description}</p>
+					</a>
+				))}
+			</div>
+		</section>
+
+		<AdSlot position="top" />
+
+		<section aria-labelledby="recent-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Fresh from Tokyo</p>
+					<h2 id="recent-heading">Latest guides</h2>
+				</div>
+			</div>
+			<ArticleList articles={recent} />
+		</section>
+
+		<section aria-labelledby="popular-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">A useful place to begin</p>
+					<h2 id="popular-heading">Popular guides</h2>
+				</div>
+			</div>
+			<ArticleList articles={popular} emptyMessage="Popular guides will appear here." />
+		</section>
+
+		<p class="small-note">
+			<a href={getArticlePath('konbini-checkout')}>See how a practical guide is structured</a>
+		</p>
+	</div>
+</SiteLayout>

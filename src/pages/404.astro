@@ -1,0 +1,23 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { SITE, STAGES } from '../data/site';
+---
+
+<SiteLayout title={`Page not found | ${SITE.name}`} description="The page you are looking for could not be found.">
+	<div class="page-shell">
+		<header class="page-intro">
+			<p class="eyebrow">404 · Page not found</p>
+			<h1>This page is off the map.</h1>
+			<p>The page may have moved. Start again with one of these practical guides.</p>
+			<a class="button" href="/">Back to Ordinary Tokyo</a>
+		</header>
+		<section class="stage-grid" aria-label="Browse guides by trip stage">
+			{Object.entries(STAGES).map(([id, stage]) => (
+				<a class="entry-card" href={`/stage/${id}/`}>
+					<h3>{stage.title}</h3>
+					<p>{stage.description}</p>
+				</a>
+			))}
+		</section>
+	</div>
+</SiteLayout>

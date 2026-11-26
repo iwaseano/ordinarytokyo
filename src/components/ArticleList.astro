@@ -1,0 +1,21 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import ArticleCard from './ArticleCard.astro';
+
+interface Props {
+	articles: CollectionEntry<'articles'>[];
+	emptyMessage?: string;
+}
+
+const { articles, emptyMessage = 'More practical guides are coming soon.' } = Astro.props;
+---
+
+{
+	articles.length > 0 ? (
+		<div class="article-grid">
+			{articles.map((article) => <ArticleCard article={article} />)}
+		</div>
+	) : (
+		<p class="empty-state">{emptyMessage}</p>
+	)
+}
