@@ -7,7 +7,6 @@ public/images/optimized/
 
 # documentation
 docs/*
-!docs/article-contribution-guide.md
 
 # dependencies
 node_modules/

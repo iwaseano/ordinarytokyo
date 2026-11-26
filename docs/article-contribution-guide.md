@@ -113,3 +113,26 @@ git push -u origin feature-article-<slug>
 ```
 
 Pull Requestの宛先は`dev`です。本文に実測の根拠、確認日、未確認事項、`draft`の公開予定を記載し、CIとAzure Static Web Appsの`dev`プレビューが利用可能な場合はURLでも表示を確認してください。
+
+
+## 6. Pull Requestをdevにマージする
+
+1. GitHubで記事用ブランチからPull Requestを開き、baseが`dev`、compareが`feature-article-<slug>`であることを確認します。
+2. 必要なレビューとChecksが完了し、内容とプレビューを確認できたら、権限のある担当者が **Merge pull request** を選び、マージを確定します。ブランチ保護ルールやプロジェクトのレビュー方針に従ってください。
+3. Pull Requestが **Merged** になり、記事が`dev`に反映されたことを確認します。`draft: true`の記事は、マージ後も本番ビルドには含まれません。
+
+## 7. 記事用ブランチを削除する
+
+マージ済みで、ブランチに残すべき未反映の作業がないことを確認してから削除します。
+
+1. GitHubのマージ済みPull Request画面で **Delete branch** を選び、リモートの記事用ブランチを削除します。forkからのPull Requestでは、記事用ブランチを置いたfork側で削除します。
+2. ローカルに未コミットの変更がないことを確認し、`dev`に戻って最新の状態を取得してから、ローカルの記事用ブランチを削除します。
+
+   ```sh
+   git status
+   git switch dev
+   git pull --ff-only origin dev
+   git branch -d feature-article-<slug>
+   ```
+
+`git branch -d`が未マージを理由に削除を拒否した場合は、Pull Requestのマージ状態と未反映の変更を確認してください。Squash mergeなどでは、変更内容が`dev`に反映されていてもコミット履歴上は未マージと判定されることがあります。**PRがマージ済みで、ブランチに残すべき未反映のコミットがないことを確認できた場合に限り**、`git branch -D feature-article-<slug>`でローカルブランチを削除できます。削除後もGitHubのPull Requestと`dev`の履歴は残ります。
