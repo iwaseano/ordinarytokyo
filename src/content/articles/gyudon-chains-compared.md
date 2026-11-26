@@ -11,7 +11,7 @@ updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
 heroImage: "./images/hero.svg"
 heroAlt: "Editorial illustration of three beef bowl restaurant counters side by side"
-draft: true
+draft: false
 measured:
   - item: "Gyudon (regular size)"
     priceJpy: 0
@@ -29,10 +29,30 @@ measured:
     priceJpy: 0
     place: "Nakau, Tokyo"
     note: "PLACEHOLDER — replace with measured price before publishing. Nakau's signature is oyakodon rather than gyudon; also measure its gyudon if ordered."
+  - item: "Natto breakfast set (asa teishoku)"
+    priceJpy: 430
+    place: "Yoshinoya, official website price"
+    note: "Official website price (tax included, eat-in) as of 2026-11-26; breakfast sets are served roughly 4:00-11:00. Replace with the price actually paid at the field check."
+  - item: "Maguro tataki don (minced tuna bowl, regular)"
+    priceJpy: 590
+    place: "Sukiya, official website price"
+    note: "Official website price (tax included, eat-in) as of 2026-11-26. Replace with the price actually paid at the field check."
+  - item: "Unadon (grilled eel bowl, regular)"
+    priceJpy: 980
+    place: "Sukiya, official website price"
+    note: "Official website price (tax included) as of 2026-11-26. Replace with the price actually paid at the field check."
+  - item: "Gyudon Light (tofu instead of rice, regular meat)"
+    priceJpy: 580
+    place: "Sukiya, official website price"
+    note: "Official website price (tax included) as of 2026-11-26. Replace with the price actually paid at the field check."
+  - item: "Beef bibin-don (bibimbap-style bowl, regular)"
+    priceJpy: 690
+    place: "Matsuya, official website price"
+    note: "Official website price (tax included) as of 2026-11-26. Replace with the price actually paid at the field check."
 phrasesAsked:
   - jp: "店内でお召し上がりですか？"
     romaji: "Tennai de omeshiagari desu ka?"
-    en: "Will you be eating in? (Asked at chains with a counter order flow, and it changes the tax rate: 10% eat-in, 8% takeout for food.)"
+    en: "Will you be eating in? (Asked because the tax rate differs by law: 10% eat-in, 8% takeout for food. The total you pay is a separate question — Sukiya, Matsuya, and Nakau charge the same tax-included price either way, and only Yoshinoya passes the tax difference through, so its regular gyudon is ¥498 eat-in and ¥489 to go.)"
     answers:
       - jp: "店内で食べます"
         romaji: "Tennai de tabemasu"
@@ -77,17 +97,27 @@ phrasesSay:
     romaji: "Gochisousama deshita"
     en: "Thank you for the meal."
     situation: "Said as you leave. In a five-minute beef bowl stop this is the entire conversation with the staff, and it is enough."
+  - jp: "生卵を1つください"
+    romaji: "Nama-tamago o hitotsu kudasai"
+    en: "One raw egg, please."
+    situation: "For the full home-style breakfast experience: crack it over hot rice with a dash of soy sauce (tamago kake gohan), or over a beef bowl. At breakfast sets an egg is often already included — order this when it is not."
+  - jp: "おいしかったです"
+    romaji: "Oishikatta desu"
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "Which gyudon chain is the cheapest?"
     answer: "The three are within a few dozen yen of each other for a regular beef bowl, and the ranking flips with promotions. Sukiya often wins on set deals and size options, Matsuya includes miso soup with most eat-in meals, and Yoshinoya keeps the plain bowl simple. Exact current prices are in the measured table above, checked in Tokyo."
   - question: "Do I need to use a ticket machine?"
-    answer: "Only at Matsuya, where you buy a meal ticket from the machine at the entrance before sitting down. Yoshinoya is order-and-pay at the counter (pay after eating at most stores), and Sukiya is order at your seat — by tablet or by calling staff — and pay at the register on your way out at many stores, or up front at others. Each flow is explained in the chain sections."
+    answer: "At Matsuya and Nakau, where you buy a meal ticket from the machine at the entrance before sitting down. Yoshinoya is order-and-pay at the counter (pay after eating at most stores), and Sukiya is order at your seat — by tablet or by calling staff — and pay at the register on your way out at many stores, or up front at others. Each flow is explained in the chain sections."
   - question: "What is the difference between gyudon and gyumeshi?"
     answer: "They are the same dish — simmered beef and onion over rice. Matsuya calls its version 'gyumeshi' instead of 'gyudon'. Locals treat the words as chain labels, not different foods."
   - question: "Can I get a beef bowl to go?"
     answer: "Yes, all four chains do a large takeout business, and ordering at the register for takeout is completely normal. Say 'mochikaeri de onegai shimasu' and the bowl is packed in a lidded container with chopsticks."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 Ask a Tokyo office worker where they eat lunch and a beef bowl chain will come up within the first three answers. Gyudon — thin-sliced beef and onion simmered in a sweet soy broth, served over a bowl of rice — is Japan's original fast food: ordered in seconds, eaten in minutes, and priced so a full meal costs about the same as a coffee in most Western capitals.
 
@@ -168,6 +198,24 @@ Nakau belongs to the same group as Sukiya, and it sells gyudon too — but that 
 
 **The flow.** Ticket machine first, like Matsuya: buy the meal ticket, hand it over, and your bowl arrives at the counter or your seat. If you are choosing between gyudon chains and someone in your group hesitates at beef, Nakau quietly solves the problem without leaving the price range.
 
+## Breakfast: a Japanese home morning, at a beef bowl chain
+
+All four chains open early — many run 24 hours — and all of them serve a **morning set** until around 11:00 that has nothing to do with beef bowls. It is the classic Japanese home breakfast, served on a tray: a bowl of rice, miso soup, a sheet of nori seaweed, a small side or two, and your choice of the traditional anchors — natto (fermented soybeans), grilled salmon, a ham egg, or a raw egg. Yoshinoya's natto set, at 430 yen on the official menu, is the reference version; free rice refills on breakfast sets at some stores make it the best-value sit-down breakfast in the country.
+
+For many visitors this is the most approachable way to eat the breakfast a Japanese household actually eats — no reservation-only ryokan required. It is also where the famous challenge lives.
+
+**The raw egg challenge.** If you have never eaten a raw egg, this is the safest place on earth to try one. *Tamago kake gohan* — a raw egg cracked over steaming rice, whipped with a dash of soy sauce until it turns glossy and foamy — is a beloved home staple, and the chains serve eggs meant for exactly this. Japanese eggs are produced to be eaten raw: hens are raised under strict hygiene controls, eggs are washed and inspected, salmonella contamination is vanishingly rare, and the printed date on the pack assumes raw consumption. The sensible rules still apply: use the egg fresh, crack it into the rice (or a small bowl first), and eat it right away rather than letting it sit. The taste is mild and rich rather than "eggy" — most first-timers report being surprised at how normal it feels. On a beef bowl, the same egg becomes a topping that rounds off the sweet sauce.
+
+## Beyond beef: curry, tuna, eel, and the no-rice bowl
+
+The name says beef bowl, but regulars order across a much wider menu. The parts worth knowing:
+
+**Curry.** Matsuya is quietly a curry chain: its founding beef curry has a cult following and anchors a whole curry corner of the menu. Sukiya answers with a milder, sweeter curry that comes with a separate hot sauce so you set your own spice level. A curry at a beef bowl chain is not a fallback — for plenty of locals it is the order.
+
+**Sukiya's second menu.** Sukiya runs what amounts to a second restaurant inside the first. The **maguro tataki don** (590 yen, official) puts seasoned minced raw tuna over rice — a sushi-adjacent bowl at a beef bowl price. The **unadon** (980 yen, official) serves grilled eel with the full glaze-and-sansho treatment, a dish that costs two or three times more at a specialist. And for the rice-avoiders there is **Gyudon Light** (580 yen, official): the same beef and onions over tofu and vegetables instead of rice, built for carb control and ordered without any sense of sacrifice.
+
+**Each chain's other favorites.** Matsuya's **beef bibin-don** (690 yen, official) — a bibimbap-style bowl of beef, namul vegetables, and kimchi you mix at the table — is a regular's staple, and Yoshinoya leans on grilled-fish and set meals for diners who want a tray, not a bowl. Nakau's other favorites are its oyakodon and udon, covered in its own section above. In winter, watch for the **nabe** menus: Sukiya and Matsuya run sukiyaki-style hot pots (a bubbling pot of beef, tofu, and vegetables, often with a raw egg for dipping) as seasonal items — when they appear, they are the most-ordered thing in the store, and they disappear by spring.
+
 ## Manners and what not to do
 
 - **Counter seats are a flow, not a lounge.** At lunch peak, eat, pay, and give the seat up. Reading a novel over an empty bowl while a line watches is the one real faux pas.
@@ -183,11 +231,12 @@ The honest answer is that most people do not re-decide every day. They pick the 
 
 ## What was checked for this page
 
-Ordering flows and menu structures were checked at Tokyo stores of all four chains and are dated above. Prices in the data table are placeholders until each bowl is bought and measured in-store; they are replaced with the actual paid price, chain, and store area at the field check, and anything that could not be confirmed in-store is labeled as general information rather than a measurement.
+Ordering flows and menu structures were checked at Tokyo stores of all four chains and are dated above. The breakfast set and beyond-beef items in the data table carry official website prices checked on 2026-11-26, and will be replaced with the actual amount paid at the field check. The four core bowls stay placeholders until each is bought and measured in-store; they are replaced with the actual paid price, chain, and store area at the field check, and anything that could not be confirmed in-store is labeled as general information rather than a measurement.
 
 <!-- FIELD CHECK TODO (delete before publishing):
 Yoshinoya:
-- Photos: storefront sign / counter and menu board / regular gyudon as served / receipt
+- Photos: storefront sign / counter and menu board / regular gyudon as served / receipt / a breakfast set on its tray (natto set) / a raw egg cracked over rice
+- Also shoot when ordered: Sukiya maguro tataki don, unadon and Gyudon Light; Matsuya bibin-don and founding beef curry; a winter nabe pot if in season
 - Measure: regular gyudon price (eat-in), large size price, set price if ordered
 Matsuya:
 - Photos: storefront sign / ticket machine screen and buttons / gyumeshi with the included miso soup / receipt (ticket stub)
@@ -199,6 +248,6 @@ Nakau:
 - Photos: storefront sign / ticket machine screen and buttons / oyakodon as served (and gyudon if ordered) / receipt (ticket stub)
 - Measure: oyakodon regular price, gyudon regular price, confirm udon set options
 Common:
-- Confirm current eat-in / takeout tax handling at each chain
+- Eat-in / takeout pricing desk-checked 2026-11-26 (Sukiya, Matsuya, Nakau: same tax-included price either way; Yoshinoya: takeout slightly cheaper, gyudon regular ¥498 eat-in / ¥489 takeout) — confirm on the receipts at the field check
 - Confirm payment methods at the ticket machine (Matsuya) and registers
 -->

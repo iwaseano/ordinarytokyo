@@ -11,7 +11,7 @@ updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
 heroImage: "./images/hero.svg"
 heroAlt: "Three katsudon chain storefronts in Tokyo: Katsuya, Matsunoya, and Katsuan"
-draft: true
+draft: false
 measured:
   - item: "Katsudon (standard, takeout or eat-in)"
     priceJpy: 0
@@ -59,6 +59,14 @@ phrasesSay:
     romaji: "Omizu o kudasai"
     en: "Water, please."
     situation: "Many stores are self-service for water and tea. If you cannot spot the dispenser, this phrase gets you pointed to it."
+  - jp: "ごちそうさまでした"
+    romaji: "Gochisousama deshita"
+    en: "Thank you for the meal."
+    situation: "The standard closing phrase of every meal in Japan, said as you leave. Showing this card to the staff works even if you cannot pronounce it."
+  - jp: "おいしかったです"
+    romaji: "Oishikatta desu"
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "What exactly is katsudon?"
@@ -68,6 +76,8 @@ faq:
   - question: "Which chain is cheapest?"
     answer: "Matsunoya positions itself as the budget option and its standard katsudon is usually the lowest-priced of the three, with frequent coupons in its app. Katsuya and Katsuan sit slightly higher but run their own regular promotions. Exact current prices are in the measured table above once field-checked."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 Before a big exam, a job interview, or a match that matters, a lot of people in Japan eat the same thing the night before: katsudon. The reason is a pun — *katsu*, the fried pork cutlet, sounds exactly like *katsu*, "to win." Underneath the wordplay is a very practical meal: a freshly fried cutlet, simmered for a moment in sweet dashi broth with onion and egg, laid over a full bowl of rice. It is fast, it is filling, and it costs about the same as a coffee-shop lunch.
 
