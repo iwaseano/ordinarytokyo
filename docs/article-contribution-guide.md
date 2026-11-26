@@ -11,15 +11,15 @@ git clone https://github.com/iwaseano/ordinarytokyo.git
 cd ordinarytokyo
 git switch dev
 git pull --ff-only origin dev
-git switch -c feature/article-<slug>
+git switch -c feature-article-<slug>
 ```
 
-`<slug>`は記事のURL用識別子に置き換えます。英小文字・数字・ハイフンを使い、例は`feature/article-konbini-checkout`です。
+`<slug>`は記事のURL用識別子に置き換えます。英小文字・数字・ハイフンを使います。既存の`feature`ブランチと名前が衝突しないよう、ブランチ名は`feature-article-<slug>`形式にします。例は`feature-article-konbini-checkout`です。
 
 ## 2. 記事と画像を追加する
 
 - 記事を`src/content/articles/<slug>.md`に作成します。ファイル名とFront Matterの`slug`は一致させます。
-- ヒーロー画像は`src/assets/articles/<slug>/images/`に置き、`heroImage`には`./images/<filename>`を指定します。
+- ヒーロー画像は任意です。画像がない場合や`heroImage`の参照先が見つからない場合は、共通の`public/og-default.svg`を表示します。独自画像を指定する場合は実ファイルを`src/assets/articles/<slug>/images/`に置き、`heroImage`に`./images/<filename>`、`heroAlt`に画像の説明を記入します。独自画像の参照先が見つからない場合は、共通画像に切り替えてビルドログに警告を出します。
 - 本文画像も同じ画像フォルダーに置きます。Markdownからは`../../assets/articles/<slug>/images/<filename>`で参照します。
 - 写真は自分で撮影したもの、または利用権を確認したものに限ります。実際に訪問・確認していない情報を実体験として書かないでください。
 
@@ -67,6 +67,21 @@ faq: []
 
 `YYYY-MM-DD`、価格、文言は例示です。公開前に実データへ置き換えてください。`measured`、`phrasesAsked`、`phrasesSay`はそれぞれ1件以上必要です。`phrasesAsked`には1つ以上の回答を含めます。Front Matterはstrict検証されるため、独自のキーを追加するとビルドに失敗します。
 
+`heroImage`と`heroAlt`は画像を使う場合の項目です。画像が不要なら両方を省略できます。独自画像のパスが見つからない場合も共通画像が使われます。
+
+### 必須項目
+
+次の項目はFront Matterから省略できません。
+
+- 記事の基本情報: `title`、`slug`、`description`（120〜160文字）、`stage`、`domain`、`tags`、`chain`
+- 日付: `publishedAt`、`updatedAt`、`checkedAt`
+- 記事データ: 1件以上の`measured`、1件以上の`phrasesAsked`、1件以上の`phrasesSay`
+- 各`measured`項目: `item`、`priceJpy`、`place`、`note`
+- 各`phrasesAsked`項目: `jp`、`romaji`、`en`、1件以上の`answers`。各回答にも`jp`、`romaji`、`en`が必要です。
+- 各`phrasesSay`項目: `jp`、`romaji`、`en`、`situation`
+
+`draft`は省略可能で、省略時は`false`です。`affiliateLinks`と`faq`も省略可能で、省略時は空配列になります。省略する場合も含め、テンプレートを使って項目を確認してください。
+
 - `stage`は`first-trip`、`repeat`、`live-like-local`から選びます。
 - `domain`は`food`、`shopping`、`infrastructure`、`local-places`から選びます。新しいdomainが必要なら、記事を追加する前に担当者へ相談してください。
 - `chain`は[サイト設定](../src/data/site.ts)にあるIDを使います。新しいチェーンの追加も担当者と調整してください。
@@ -94,7 +109,7 @@ npm run build
 ```sh
 git add src/content/articles/<slug>.md src/assets/articles/<slug>/
 git commit -m "Add article: <slug>"
-git push -u origin feature/article-<slug>
+git push -u origin feature-article-<slug>
 ```
 
 Pull Requestの宛先は`dev`です。本文に実測の根拠、確認日、未確認事項、`draft`の公開予定を記載し、CIとAzure Static Web Appsの`dev`プレビューが利用可能な場合はURLでも表示を確認してください。
