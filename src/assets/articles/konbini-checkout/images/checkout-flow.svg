@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title description">
+  <title id="title">Four steps at a convenience store checkout</title>
+  <desc id="description">Choose items, listen to the staff question, answer, and pay.</desc>
+  <rect width="1200" height="500" rx="28" fill="#edf1f5"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g fill="#1f3a5f">
+      <circle cx="170" cy="190" r="66"/><circle cx="457" cy="190" r="66"/>
+      <circle cx="744" cy="190" r="66"/><circle cx="1031" cy="190" r="66"/>
+    </g>
+    <g fill="#fff" font-size="48" font-weight="700">
+      <text x="170" y="207">1</text><text x="457" y="207">2</text>
+      <text x="744" y="207">3</text><text x="1031" y="207">4</text>
+    </g>
+    <g fill="#22252a" font-size="27" font-weight="700">
+      <text x="170" y="315">Choose items</text><text x="457" y="315">Listen</text>
+      <text x="744" y="315">Answer</text><text x="1031" y="315">Pay</text>
+    </g>
+  </g>
+  <path d="M253 190h120M540 190h120M827 190h120" stroke="#d64533" stroke-width="10" stroke-linecap="round"/>
+</svg>

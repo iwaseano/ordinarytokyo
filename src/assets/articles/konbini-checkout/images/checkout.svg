@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Illustration of a convenience store checkout</title>
+  <desc id="description">A simple editorial illustration of a counter, shopping basket, and payment terminal.</desc>
+  <rect width="1200" height="675" fill="#edf1f5"/>
+  <rect x="110" y="130" width="980" height="415" rx="26" fill="#fff" stroke="#1f3a5f" stroke-width="8"/>
+  <path d="M110 390h980v130a25 25 0 0 1-25 25H135a25 25 0 0 1-25-25z" fill="#1f3a5f"/>
+  <rect x="235" y="210" width="210" height="145" rx="16" fill="#d64533"/>
+  <path d="M265 340h145l-26 82H292z" fill="#fae8d8" stroke="#22252a" stroke-width="7"/>
+  <rect x="735" y="205" width="205" height="160" rx="20" fill="#edf1f5" stroke="#1f3a5f" stroke-width="8"/>
+  <rect x="772" y="238" width="130" height="50" rx="8" fill="#fff"/>
+  <circle cx="804" cy="322" r="13" fill="#2e7d52"/>
+  <circle cx="838" cy="322" r="13" fill="#d64533"/>
+  <circle cx="872" cy="322" r="13" fill="#1f3a5f"/>
+  <text x="600" y="590" text-anchor="middle" fill="#1f3a5f" font-family="Arial, sans-serif" font-size="35" font-weight="700">A sample checkout scene</text>
+</svg>

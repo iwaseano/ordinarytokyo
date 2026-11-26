@@ -1,0 +1,28 @@
+---
+interface Props {
+	position: 'top' | 'middle' | 'bottom';
+}
+
+const { position } = Astro.props;
+const clientId = import.meta.env.PUBLIC_ADSENSE_CLIENT_ID;
+const slotId = import.meta.env[`PUBLIC_AD_SLOT_${position.toUpperCase()}`];
+const ready = Boolean(clientId && slotId);
+---
+
+<aside class="ad-slot" aria-label="Advertisement">
+	<span class="ad-label">Advertisement</span>
+	{
+		ready ? (
+			<ins
+				class="adsbygoogle"
+				style="display:block"
+				data-ad-client={clientId}
+				data-ad-slot={slotId}
+				data-ad-format="auto"
+				data-full-width-responsive="true"
+			/>
+		) : (
+			<div class="ad-placeholder">Ad space</div>
+		)
+	}
+</aside>

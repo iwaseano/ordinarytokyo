@@ -1,0 +1,115 @@
+---
+import { SITE, STAGES } from '../data/site';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description: string;
+	canonicalPath?: string;
+	ogImage?: string;
+}
+
+const {
+	title,
+	description,
+	canonicalPath = Astro.url.pathname,
+	ogImage = '/og-default.svg',
+} = Astro.props;
+const canonicalUrl = new URL(canonicalPath, SITE.url).toString();
+const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
+const verification = import.meta.env.PUBLIC_GSC_VERIFICATION;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<meta name="theme-color" content="#FAFAF7" />
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://www.googletagmanager.com" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={SITE.name} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content={new URL(ogImage, SITE.url).toString()} />
+		<meta name="twitter:card" content="summary_large_image" />
+		{verification && <meta name="google-site-verification" content={verification} />}
+		<title>{title}</title>
+		{
+			gaId && (
+				<>
+					<script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} />
+					<script
+						is:inline
+						define:vars={{ gaId }}
+					>
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){window.dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', gaId);
+						document.addEventListener('click', (event) => {
+							const target = event.target instanceof Element
+								? event.target.closest('[data-affiliate-id], [data-card-save]')
+								: null;
+							if (!target) return;
+							gtag('event', target.hasAttribute('data-card-save') ? 'phrase_card_save' : 'affiliate_click', {
+								link_id: target.getAttribute('data-affiliate-id') || undefined,
+								page_path: window.location.pathname
+							});
+						});
+					</script>
+				</>
+			)
+		}
+		{
+			import.meta.env.PUBLIC_ADSENSE_CLIENT_ID && (
+				<script
+					async
+					src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${import.meta.env.PUBLIC_ADSENSE_CLIENT_ID}`}
+					crossorigin="anonymous"
+				/>
+			)
+		}
+	</head>
+	<body>
+		<a class="skip-link" href="#main-content">Skip to content</a>
+		<header class="site-header">
+			<div class="site-header__inner">
+				<a class="wordmark" href="/" aria-label="Ordinary Tokyo home">
+					<span class="wordmark__mark">O</span>
+					<span>Ordinary Tokyo</span>
+				</a>
+				<nav aria-label="Main navigation">
+					<ul class="site-nav">
+						{Object.entries(STAGES).map(([id, stage]) => (
+							<li><a href={`/stage/${id}/`}>{stage.title}</a></li>
+						))}
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="main-content">
+			<slot />
+		</main>
+		<footer class="site-footer">
+			<div class="site-footer__inner">
+				<div>
+					<a class="wordmark wordmark--footer" href="/">Ordinary Tokyo</a>
+					<p>Everyday Japan, explained by a local.</p>
+				</div>
+				<nav aria-label="Footer navigation">
+					<a href="/about/">About</a>
+					<a href="/privacy-policy/">Privacy Policy</a>
+					<a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+					<a href="/contact/">Contact</a>
+				</nav>
+				<p class="copyright">© {new Date().getFullYear()} Ordinary Tokyo</p>
+			</div>
+		</footer>
+	</body>
+</html>

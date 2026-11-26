@@ -1,0 +1,253 @@
+---
+import AdSlot from '../components/AdSlot.astro';
+import ArticleList from '../components/ArticleList.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { getArticlePath, getSortedArticles } from '../data/articles';
+import { DOMAINS, SITE, STAGES } from '../data/site';
+
+const articles = await getSortedArticles();
+const popular = SITE.popularSlugs
+	.map((slug) => articles.find((article) => article.data.slug === slug))
+	.filter((article) => article !== undefined);
+const recent = articles.slice(0, 6);
+---
+
+<SiteLayout title={SITE.name} description={SITE.description} canonicalPath="/">
+	<div class="page-shell">
+		<section class="hero-panel">
+			<div>
+				<p class="eyebrow">Everyday Japan, explained by a local</p>
+				<h1>Feel at home in the everyday side of Tokyo.</h1>
+				<p class="hero-copy">
+					Practical, locally checked guides to the shops, food, and small routines
+					that make daily life in Japan work.
+				</p>
+				<p class="hero-copy">
+					Every guide comes with phrase cards in big, clear Japanese. No pronunciation needed — just open the page and show the card to the staff.
+				</p>
+				<a class="button" href="/stage/first-trip/">Start with your first trip</a>
+			</div>
+			<div class="show-card sample-card sample-card--hero">
+				<div class="sample-card__inner">
+					<p class="sample-card__brand"><span aria-hidden="true">O</span> Ordinary Tokyo</p>
+					<div class="sample-card__phrase">
+						<p class="sample-card__jp" lang="ja">見てくれてありがとう</p>
+						<p class="sample-card__romaji">Mite kurete arigatou</p>
+						<p class="sample-card__en">Thanks for stopping by.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="phrase-intro" aria-labelledby="phrase-intro-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Show, don't struggle</p>
+					<h2 id="phrase-intro-heading">No Japanese? Just show the card.</h2>
+				</div>
+			</div>
+			<p class="phrase-intro__copy">
+				Each guide includes phrase cards for the moments that matter — what staff will ask you, what to say back, and how to say thanks. The Japanese is set large on purpose: hold up your phone, point to the card, and the basics get across even if you can't say a single word yet. And if you do try saying it out loud — however it comes out — they'll be even happier that you tried.
+			</p>
+			<ol class="phrase-steps" role="list">
+				<li><strong>Open the guide</strong> — at the shop, on your phone</li>
+				<li><strong>Find the phrase card</strong> — for the moment you're in</li>
+				<li><strong>Show it to the staff</strong> — that's it</li>
+			</ol>
+			<div class="show-card-grid">
+				<div class="show-card sample-card">
+					<div class="sample-card__inner">
+						<p class="sample-card__brand"><span aria-hidden="true">O</span> Ordinary Tokyo</p>
+						<div class="sample-card__phrase">
+							<p class="sample-card__jp" lang="ja">ごちそうさまでした</p>
+							<p class="sample-card__romaji">Gochisousama deshita</p>
+							<p class="sample-card__en">Thank you for the meal.</p>
+						</div>
+					</div>
+				</div>
+				<div class="show-card sample-card">
+					<div class="sample-card__inner">
+						<p class="sample-card__brand"><span aria-hidden="true">O</span> Ordinary Tokyo</p>
+						<div class="sample-card__phrase">
+							<p class="sample-card__jp" lang="ja">おいしかったです</p>
+							<p class="sample-card__romaji">Oishikatta desu</p>
+							<p class="sample-card__en">That was delicious.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section aria-labelledby="stage-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Choose your starting point</p>
+					<h2 id="stage-heading">Guides for your Japan journey</h2>
+				</div>
+			</div>
+			<div class="stage-grid">
+				{Object.entries(STAGES).map(([id, stage]) => (
+					<a class="entry-card" href={`/stage/${id}/`}>
+						<h3>{stage.title}</h3>
+						<p>{stage.description}</p>
+					</a>
+				))}
+			</div>
+		</section>
+
+		<section aria-labelledby="domain-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Explore local life</p>
+					<h2 id="domain-heading">Everyday areas</h2>
+				</div>
+			</div>
+			<div class="domain-grid">
+				{Object.entries(DOMAINS).map(([id, domain]) => (
+					<a class="entry-card" href={`/domain/${id}/`}>
+						<h3>{domain.title}</h3>
+						<p>{domain.description}</p>
+					</a>
+				))}
+			</div>
+		</section>
+
+		<AdSlot position="top" />
+
+		<section aria-labelledby="recent-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Fresh from Tokyo</p>
+					<h2 id="recent-heading">Latest guides</h2>
+				</div>
+			</div>
+			<ArticleList articles={recent} />
+		</section>
+
+		<section aria-labelledby="popular-heading">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">A useful place to begin</p>
+					<h2 id="popular-heading">Popular guides</h2>
+				</div>
+			</div>
+			<ArticleList articles={popular} emptyMessage="Popular guides will appear here." />
+		</section>
+
+		<p class="small-note">
+			<a href={getArticlePath('konbini-checkout')}>See the phrase cards in action</a>
+		</p>
+	</div>
+</SiteLayout>
+
+<style>
+	.sample-card {
+		padding: 0.6rem;
+		background: var(--color-bg);
+		box-shadow: 0 6px 20px rgb(34 37 42 / 8%);
+	}
+
+	.sample-card__inner {
+		display: flex;
+		min-height: 250px;
+		flex-direction: column;
+		padding: 1.2rem;
+		border: 3px solid var(--color-primary);
+		border-radius: 8px;
+	}
+
+	.sample-card--hero .sample-card__inner {
+		min-height: 300px;
+	}
+
+	.sample-card__brand {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		margin: 0;
+		color: var(--color-primary);
+		font-size: 0.9rem;
+		font-weight: 750;
+	}
+
+	.sample-card__brand span {
+		display: grid;
+		width: 32px;
+		height: 32px;
+		place-items: center;
+		border-radius: 50%;
+		background: var(--color-primary);
+		color: white;
+	}
+
+	.sample-card__phrase {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-block: 1rem;
+		text-align: center;
+	}
+
+	.sample-card__jp {
+		margin-bottom: 0.4rem;
+		color: var(--color-text);
+		font-size: clamp(32px, 3vw, 40px);
+		font-weight: 700;
+		line-height: 1.35;
+		overflow-wrap: anywhere;
+	}
+
+	.sample-card__romaji {
+		margin-bottom: 0.6rem;
+		color: #414954;
+	}
+
+	.sample-card__en {
+		margin-bottom: 0;
+		color: var(--color-primary);
+		font-weight: 700;
+	}
+
+	.phrase-intro__copy {
+		max-width: 76ch;
+	}
+
+	.phrase-steps {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+		margin: 1.5rem 0;
+		padding: 0;
+		list-style: none;
+		counter-reset: phrase-step;
+	}
+
+	.phrase-steps li {
+		padding: 1.2rem;
+		border: 1px solid var(--color-border);
+		border-radius: 14px;
+		background: var(--color-muted);
+		counter-increment: phrase-step;
+	}
+
+	.phrase-steps li::before {
+		display: grid;
+		width: 32px;
+		height: 32px;
+		place-items: center;
+		margin-bottom: 0.75rem;
+		border-radius: 50%;
+		background: var(--color-primary);
+		color: white;
+		font-weight: 700;
+		content: counter(phrase-step);
+	}
+
+	@media (max-width: 760px) {
+		.phrase-steps {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

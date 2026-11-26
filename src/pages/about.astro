@@ -1,0 +1,45 @@
+---
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { SITE } from '../data/site';
+---
+
+<SiteLayout title={`About | ${SITE.name}`} description="Learn about Ordinary Tokyo and how its practical local guides are made.">
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: 'About' }]} />
+		<header class="page-intro">
+			<p class="eyebrow">About the site</p>
+			<h1>Everyday Tokyo, from a local perspective.</h1>
+		</header>
+		<div class="legal-copy">
+			<h2>Who writes Ordinary Tokyo?</h2>
+			<p>
+				Hi, I'm a Japanese IT engineer living in Tokyo. I started Ordinary Tokyo to share
+				the shops, services, and little routines that are part of everyday life here.
+			</p>
+			<h2>About the guides</h2>
+			<p>
+				I write from my own experience of everyday life in Japan, and I plan to add
+				photos from my visits. If you're unsure how to pronounce Japanese, you can show
+				a phrase card to staff to help get your point across. I also include checked dates
+				so you can see when information was last reviewed.
+			</p>
+			<p>
+				For prices, I refer to official websites at the time of research. Prices can
+				change after an article is published, so please check the official website for
+				the latest information. Any sample prices are marked as such.
+			</p>
+			<h2>What you'll find here</h2>
+			<ul>
+				<li>Everyday places and how people use them.</li>
+				<li>Things staff might ask, and phrases you can say or show in reply.</li>
+				<li>Mostly chain stores and large retailers, with care taken when covering small local businesses.</li>
+			</ul>
+			<h2>Get in touch</h2>
+			<p>
+				Have a question or spotted something that needs updating? Feel free to visit the
+				<a href="/contact/">contact page</a>. I'd love to hear from you.
+			</p>
+		</div>
+	</div>
+</SiteLayout>

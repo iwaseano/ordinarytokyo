@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getArticlePath } from '../data/articles';
+import { STAGES, domainInfo } from '../data/site';
+import { formatDate } from '../utils/format';
+
+interface Props {
+	article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const stageTitle = STAGES[article.data.stage].title;
+const domainTitle = domainInfo(article.data.domain).title;
+---
+
+<article class="article-card">
+	<a class="article-card__link" href={getArticlePath(article.data.slug)}>
+		<div class="article-card__art" aria-hidden="true">
+			<span>{domainTitle}</span>
+			<strong>{article.data.title}</strong>
+		</div>
+		<div class="article-card__body">
+			<p class="eyebrow">{stageTitle} · {domainTitle}</p>
+			<h3>{article.data.title}</h3>
+			<p>{article.data.description}</p>
+			<time datetime={article.data.publishedAt.toISOString()}>
+				{formatDate(article.data.publishedAt)}
+			</time>
+		</div>
+	</a>
+</article>

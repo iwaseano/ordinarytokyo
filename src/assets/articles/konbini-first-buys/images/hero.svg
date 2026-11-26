@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">Illustration of convenience store shelves</title>
+  <desc id="description">An editorial illustration showing onigiri, sandwiches, bottled tea, and snacks on store shelves.</desc>
+  <rect width="1200" height="675" fill="#edf1f5"/>
+  <rect x="105" y="78" width="990" height="510" rx="26" fill="#fff" stroke="#1f3a5f" stroke-width="8"/>
+  <path d="M140 230h920M140 393h920M140 536h920" stroke="#1f3a5f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M160 112h880a18 18 0 0 1 18 18v70H142v-70a18 18 0 0 1 18-18z" fill="#1f3a5f"/>
+  <text x="600" y="166" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="35" font-weight="700">EVERYDAY PICKS</text>
+  <path d="m205 211 47-65 47 65z" fill="#fff" stroke="#22252a" stroke-width="6"/>
+  <path d="M218 194h68" stroke="#d64533" stroke-width="11"/>
+  <path d="m335 211 47-65 47 65z" fill="#fff" stroke="#22252a" stroke-width="6"/>
+  <path d="M348 194h68" stroke="#2e7d52" stroke-width="11"/>
+  <rect x="500" y="145" width="145" height="70" rx="13" fill="#fae8d8" stroke="#1f3a5f" stroke-width="6"/>
+  <path d="m520 180 34-24 34 24-34 24zM584 180l27-19 27 19-27 19z" fill="#fff" stroke="#d64533" stroke-width="5"/>
+  <rect x="735" y="145" width="62" height="73" rx="18" fill="#2e7d52"/>
+  <rect x="751" y="132" width="30" height="17" rx="5" fill="#1f3a5f"/>
+  <rect x="818" y="145" width="62" height="73" rx="18" fill="#4a9b70"/>
+  <rect x="834" y="132" width="30" height="17" rx="5" fill="#1f3a5f"/>
+  <rect x="906" y="145" width="62" height="73" rx="18" fill="#2e7d52"/>
+  <rect x="922" y="132" width="30" height="17" rx="5" fill="#1f3a5f"/>
+  <rect x="185" y="263" width="120" height="112" rx="14" fill="#d64533"/>
+  <path d="M205 290h80M205 313h58" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <rect x="332" y="263" width="120" height="112" rx="14" fill="#f3c64e"/>
+  <path d="M351 290h82M351 313h62" stroke="#1f3a5f" stroke-width="9" stroke-linecap="round"/>
+  <rect x="502" y="264" width="145" height="110" rx="14" fill="#fae8d8" stroke="#1f3a5f" stroke-width="5"/>
+  <path d="m525 351 45-67 45 67z" fill="#fff" stroke="#d64533" stroke-width="5"/>
+  <rect x="690" y="263" width="120" height="112" rx="14" fill="#4a9b70"/>
+  <path d="M710 290h80M710 313h60" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <rect x="837" y="263" width="120" height="112" rx="14" fill="#1f3a5f"/>
+  <path d="M857 290h80M857 313h60" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  <rect x="190" y="424" width="84" height="100" rx="14" fill="#fae8d8" stroke="#d64533" stroke-width="6"/>
+  <path d="M207 456h50M207 477h38" stroke="#1f3a5f" stroke-width="8" stroke-linecap="round"/>
+  <rect x="302" y="424" width="84" height="100" rx="14" fill="#f3c64e" stroke="#1f3a5f" stroke-width="6"/>
+  <path d="M319 456h50M319 477h38" stroke="#1f3a5f" stroke-width="8" stroke-linecap="round"/>
+  <rect x="414" y="424" width="84" height="100" rx="14" fill="#d64533" stroke="#1f3a5f" stroke-width="6"/>
+  <path d="M431 456h50M431 477h38" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <rect x="600" y="428" width="300" height="84" rx="18" fill="#edf1f5" stroke="#1f3a5f" stroke-width="6"/>
+  <path d="M635 470h230" stroke="#1f3a5f" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="934" cy="470" r="13" fill="#2e7d52"/>
+  <circle cx="980" cy="470" r="13" fill="#d64533"/>
+  <circle cx="1026" cy="470" r="13" fill="#1f3a5f"/>
+</svg>

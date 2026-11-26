@@ -1,0 +1,27 @@
+---
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { SITE } from '../data/site';
+
+const contactUrl = import.meta.env.PUBLIC_CONTACT_URL;
+---
+
+<SiteLayout title={`Contact | ${SITE.name}`} description="Contact Ordinary Tokyo.">
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: 'Contact' }]} />
+		<header class="page-intro">
+			<p class="eyebrow">Get in touch</p>
+			<h1>Contact</h1>
+			<p>Questions or corrections about a guide are welcome.</p>
+		</header>
+		<div class="legal-copy">
+			{
+				contactUrl ? (
+					<p><a class="button" href={contactUrl} rel="noopener noreferrer">Open the contact form</a></p>
+				) : (
+					<p class="empty-state">The external contact form has not been configured yet.</p>
+				)
+			}
+		</div>
+	</div>
+</SiteLayout>

@@ -1,0 +1,27 @@
+---
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { SITE } from '../data/site';
+---
+
+<SiteLayout title={`Affiliate Disclosure | ${SITE.name}`} description="How affiliate links are disclosed on Ordinary Tokyo.">
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: 'Affiliate Disclosure' }]} />
+		<header class="page-intro">
+			<p class="eyebrow">Transparency</p>
+			<h1>Affiliate Disclosure</h1>
+		</header>
+		<div class="legal-copy">
+			<p>
+				Some pages may contain affiliate links. If you follow one and make a purchase
+				or booking, Ordinary Tokyo may receive a commission at no additional cost to you.
+			</p>
+			<p>
+				Affiliate relationships do not determine our measured prices or editorial
+				observations. Any affiliate links on an article are identified near the relevant
+				recommendation.
+			</p>
+			<p>No affiliate programs are currently configured.</p>
+		</div>
+	</div>
+</SiteLayout>

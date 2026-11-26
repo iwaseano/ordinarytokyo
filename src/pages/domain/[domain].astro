@@ -1,0 +1,32 @@
+---
+import { getSortedArticles } from '../../data/articles';
+import { DOMAINS, domainInfo } from '../../data/site';
+import ArticleList from '../../components/ArticleList.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+
+export async function getStaticPaths() {
+	const articles = await getSortedArticles();
+	return Object.keys(DOMAINS).map((id) => ({
+		params: { domain: id },
+		props: {
+			domain: domainInfo(id),
+			articles: articles.filter((article) => article.data.domain === id),
+		},
+	}));
+}
+
+const { domain, articles } = Astro.props;
+---
+
+<SiteLayout title={`${domain.title} Guides | Ordinary Tokyo`} description={domain.description}>
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: domain.title }]} />
+		<header class="page-intro">
+			<p class="eyebrow">Browse by everyday area</p>
+			<h1>{domain.title}</h1>
+			<p>{domain.description}</p>
+		</header>
+		<ArticleList articles={articles} />
+	</div>
+</SiteLayout>

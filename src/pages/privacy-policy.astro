@@ -1,0 +1,41 @@
+---
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { SITE } from '../data/site';
+---
+
+<SiteLayout title={`Privacy Policy | ${SITE.name}`} description="Privacy information for visitors to Ordinary Tokyo.">
+	<div class="page-shell">
+		<Breadcrumbs items={[{ label: 'Privacy Policy' }]} />
+		<header class="page-intro">
+			<p class="eyebrow">Privacy</p>
+			<h1>Privacy Policy</h1>
+			<p>Last updated: November 26, 2026</p>
+		</header>
+		<div class="legal-copy">
+			<h2>Information collected</h2>
+			<p>
+				Ordinary Tokyo does not operate user accounts or store personal information in
+				a site database. If analytics is configured, Google Analytics may collect
+				usage information under its own terms and privacy controls.
+			</p>
+			<h2>Cookies and advertising</h2>
+			<p>
+				If advertising is enabled, Google AdSense and its partners may use cookies or
+				similar technologies to serve and measure ads, subject to their policies and
+				applicable settings. Advertising is disabled until the site is configured for it.
+			</p>
+			<h2>External links</h2>
+			<p>
+				This site may link to third-party services. Their privacy practices are governed
+				by their own policies. Affiliate links, when present, are disclosed on the
+				relevant pages.
+			</p>
+			<h2>Contact</h2>
+			<p>
+				For privacy questions, use the contact information provided on the
+				<a href="/contact/">Contact page</a> once it has been configured.
+			</p>
+		</div>
+	</div>
+</SiteLayout>
