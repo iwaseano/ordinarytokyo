@@ -30,7 +30,7 @@ npm run preview
 
 domainは`src/data/site.ts`の`DOMAINS`に登録すると、その値がFront Matter検証とdomain一覧ページへ反映されます。後から追加・変更できます。記事のdomainを変更するときは、該当記事のFront Matterも同時に更新してください。
 
-Front Matterの`draft: true`は本番ビルドから除外されます。開発サーバーでは表示され、PRビルドではプレビュー確認用に含めます。
+Front Matterの`draft: true`は本番ビルドから除外されます。開発サーバーと、`dev`へのpushおよびPRのプレビュービルドでは表示されます。プレビューURLにアクセスできる人は下書きも閲覧できます。
 
 ## 外部サービス・公開
 
