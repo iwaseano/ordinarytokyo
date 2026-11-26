@@ -5,6 +5,9 @@ public/images/optimized/
 # generated types
 .astro/
 
+# documentation
+docs/
+
 # dependencies
 node_modules/
 
