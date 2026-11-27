@@ -2,10 +2,14 @@
 import { defineConfig } from 'astro/config';
 import { unified } from '@astrojs/markdown-remark';
 import optimizeMarkdownImages from './scripts/optimize-markdown-images.mjs';
+import wrapMarkdownTables from './scripts/wrap-markdown-tables.mjs';
 
 export default defineConfig({
 	site: 'https://ordinarytokyo.com',
 	markdown: {
-		processor: unified({ remarkPlugins: [optimizeMarkdownImages] }),
+		processor: unified({
+			remarkPlugins: [optimizeMarkdownImages],
+			rehypePlugins: [wrapMarkdownTables],
+		}),
 	},
 });

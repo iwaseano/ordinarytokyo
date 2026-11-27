@@ -505,26 +505,32 @@ img {
 	background: white;
 }
 
-.data-table {
+.data-table,
+.article-body .data-table-wrap table {
 	width: 100%;
 	border-collapse: collapse;
 	font-size: 0.94rem;
 }
 
 .data-table th,
-.data-table td {
+.data-table td,
+.article-body .data-table-wrap th,
+.article-body .data-table-wrap td {
 	padding: 0.8rem;
 	border-bottom: 1px solid var(--color-border);
 	text-align: left;
 	vertical-align: top;
 }
 
-.data-table th {
+.data-table th,
+.article-body .data-table-wrap th {
 	background: var(--color-muted);
 	color: var(--color-primary);
+	font-weight: 700;
 }
 
-.data-table tr:last-child td {
+.data-table tr:last-child td,
+.article-body .data-table-wrap tr:last-child td {
 	border-bottom: 0;
 }
 
