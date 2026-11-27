@@ -7,7 +7,7 @@ import ArticleList from '../components/ArticleList.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { getAffiliateLink } from '../data/affiliate';
-import { getArticlePath, getSortedArticles } from '../data/articles';
+import { getArticlePath, getSayPhraseId, getSortedArticles } from '../data/articles';
 import { SITE, STAGES, domainInfo } from '../data/site';
 import { formatDate, formatJpy, formatUsd } from '../utils/format';
 
@@ -252,8 +252,8 @@ const structuredData = JSON.stringify([
 			<p class="eyebrow">Show or say this</p>
 			<h2 id="say-heading">Say this / Show this</h2>
 			<div class="phrase-list">
-				{data.phrasesSay.map((phrase) => (
-					<div class="phrase-card say-card">
+				{data.phrasesSay.map((phrase, index) => (
+					<div id={getSayPhraseId(index)} class="phrase-card say-card">
 						<p class="phrase-card__jp" lang="ja">{phrase.jp}</p>
 						<p class="phrase-card__romaji">{phrase.romaji}</p>
 						<p class="phrase-card__en">{phrase.en}</p>

@@ -1,5 +1,5 @@
 ---
-import { getSortedArticles } from '../../data/articles';
+import { getArticlePath, getSayPhraseId, getSortedArticles } from '../../data/articles';
 import { chainInfo } from '../../data/site';
 import ArticleList from '../../components/ArticleList.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
@@ -22,7 +22,7 @@ const { title: chainTitle, description, localNote } = chainInfo(chain);
 const phraseSummary = [
 	...new Map(
 		articles.flatMap((article) =>
-			article.data.phrasesSay.map((phrase) => [phrase.jp, { phrase, slug: article.data.slug }] as const),
+			article.data.phrasesSay.map((phrase, index) => [phrase.jp, { phrase, slug: article.data.slug, index }] as const),
 		),
 	).values(),
 ].slice(0, 6);
@@ -48,10 +48,11 @@ const phraseSummary = [
 						</div>
 					</div>
 					<div class="phrase-list">
-						{phraseSummary.map(({ phrase, slug }) => (
-							<a class="entry-card" href={`/${slug}/#say-this`}>
+						{phraseSummary.map(({ phrase, slug, index }) => (
+							<a class="entry-card chain-phrase-card" href={`${getArticlePath(slug)}#${getSayPhraseId(index)}`}>
 								<h3 lang="ja">{phrase.jp}</h3>
 								<p>{phrase.romaji} · {phrase.en}</p>
+								<span>View this phrase in the guide</span>
 							</a>
 						))}
 					</div>
@@ -60,3 +61,19 @@ const phraseSummary = [
 		}
 	</div>
 </SiteLayout>
+
+<style>
+	.chain-phrase-card h3 {
+		font-size: clamp(32px, 6vw, 2.35rem);
+		line-height: 1.35;
+		overflow-wrap: anywhere;
+	}
+
+	.chain-phrase-card span {
+		display: block;
+		margin-top: 0.75rem;
+		font-weight: 650;
+		text-decoration: underline;
+		text-underline-offset: 0.18em;
+	}
+</style>

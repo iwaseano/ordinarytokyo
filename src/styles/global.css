@@ -619,6 +619,7 @@ img {
 }
 
 .say-card {
+	scroll-margin-top: 145px;
 	border: 2px solid var(--color-primary);
 	background: white;
 }
@@ -856,6 +857,7 @@ img {
 	.article-body,
 	.article-body h2,
 	.phrase-section,
+	.say-card,
 	#measured,
 	.show-cards,
 	#faq {
