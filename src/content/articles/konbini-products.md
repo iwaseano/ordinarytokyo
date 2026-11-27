@@ -65,6 +65,22 @@ phrasesAsked:
         romaji: "Irimasen"
         en: "I don't need any."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "これをください"
     romaji: "Kore o kudasai"
     en: "This one, please."
@@ -81,6 +97,14 @@ phrasesSay:
     romaji: "Fukuro wa irimasen"
     en: "I don't need a bag."
     situation: "Show this if you have your own bag or only bought one or two items."
+  - jp: ごちそうさまでした
+    romaji: Gochisousama deshita
+    en: "Thank you for the meal."
+    situation: "Said at the register after paying, or to staff as you leave. It is the standard way to close a meal in Japan and staff hear it all day."
+  - jp: おいしかったです
+    romaji: Oishikatta desu
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "Can I eat what I bought inside the store?"
@@ -90,6 +114,8 @@ faq:
   - question: "Do popular items sell out?"
     answer: "Yes, especially fresh items made that morning. Onigiri and sandwiches are restocked through the day, but a popular flavour can be gone by the evening. Seasonal and limited items disappear in weeks and are not restocked."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 A Japanese convenience store is not a small supermarket. It is a kitchen, a drinks fridge, a stationery drawer and a small pharmacy, all fitted into one narrow room — and Tokyo locals use it that way, several times a week, for one meal or one missing thing at a time. This page is the map of those shelves: what each section is actually for, what locals buy from it, and what to skip.
 

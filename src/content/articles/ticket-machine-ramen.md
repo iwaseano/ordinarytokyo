@@ -49,6 +49,26 @@ phrasesAsked:
         romaji: "Hai, ijou desu"
         en: "Yes, that's all."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "おすすめはどれですか？"
     romaji: "Osusume wa dore desu ka?"
     en: "Which one do you recommend?"
@@ -61,6 +81,10 @@ phrasesSay:
     romaji: "Gochisousama deshita"
     en: "Thank you for the meal."
     situation: "Say this as you leave. It is the standard way to thank any restaurant in Japan, and staff will usually answer with a cheerful farewell."
+  - jp: おいしかったです
+    romaji: Oishikatta desu
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "Can I pay by card or Suica at a ticket machine?"
@@ -70,6 +94,8 @@ faq:
   - question: "Do I sit down first or buy the ticket first?"
     answer: "Buy the ticket first. The machine is usually by the entrance, and the flow is: ticket, then seat, then hand the ticket to staff. If there is a line outside, the line is often for the machine as much as for seats."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 At many ramen shops in Japan, there is no menu on the table and nobody comes to take your order. Instead, a vending machine by the door sells paper meal tickets, and that machine *is* the ordering system. It looks intimidating for about one minute — until you realize the whole process is fixed, visual, and designed to work even if you and the staff share no language at all.
 

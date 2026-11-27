@@ -43,6 +43,22 @@ phrasesAsked:
         romaji: "Iie, detai desu"
         en: "No, I want to exit."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
   - jp: "すみません、降ります"
     romaji: "Sumimasen, orimasu"
     en: "Excuse me, I'm getting off here."
@@ -70,6 +86,8 @@ faq:
   - question: "Do I need to offer my seat to elderly passengers?"
     answer: "Seats near the doors marked with the priority-seat sign are for elderly passengers, people with disabilities, pregnant passengers, and people with small children. Offering is done quietly — stand up and gesture, without making a speech. On crowded trains many Tokyo locals simply avoid sitting in priority seats at all."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 Tokyo's trains carry millions of people a day and still feel calm. That calm is not an accident, and it is not enforced by staff. It runs on a set of unwritten rules that every regular follows without thinking: where to stand, when to be silent, how to make room. None of the rules are hard, and most of them are visible if you watch one platform for two minutes. This page walks through one ordinary ride — arriving, lining up, boarding, riding, and getting off — with the manners that matter at each step, and the few phrases that solve almost every problem at a station.
 

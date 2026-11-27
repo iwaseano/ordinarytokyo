@@ -54,6 +54,26 @@ phrasesAsked:
         romaji: "Wakarimashita"
         en: "Understood."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "網を交換してください"
     romaji: "Ami o koukan shite kudasai"
     en: "Please change the grill net, please."
@@ -70,6 +90,14 @@ phrasesSay:
     romaji: "Okaikei o onegai shimasu"
     en: "The bill, please."
     situation: "Said to staff at any of the three chains when you are done. At Yakiniku Like you simply take your tray slip to the register instead."
+  - jp: ごちそうさまでした
+    romaji: Gochisousama deshita
+    en: "Thank you for the meal."
+    situation: "Said at the register after paying, or to staff as you leave. It is the standard way to close a meal in Japan and staff hear it all day."
+  - jp: おいしかったです
+    romaji: Oishikatta desu
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "Is Japanese yakiniku the same as Korean barbecue?"
@@ -79,6 +107,8 @@ faq:
   - question: "What happens if we order too much at all-you-can-eat?"
     answer: "Some courses charge a fee for large amounts of leftover food, and every course runs on a time limit with an earlier last order. The local method is small rounds: order a few plates, finish them, then order more. You can always add; you cannot send back."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 Yakiniku is the celebration end of everyday Japanese eating — the meal people book when something went well. But it is also, in modern Tokyo, a fast solo lunch between trains. The three chains on this page cover that whole range: a classic all-you-can-eat house, a one-person grill counter, and a family feast machine. Same fire, three completely different evenings.
 

@@ -1,17 +1,17 @@
 ---
 title: "What to Buy at a Japanese Convenience Store: A First-Timer's Starter List"
 slug: konbini-first-buys
-description: "First time in a Japanese convenience store? Start with the staples locals actually buy: drinks, onigiri, sandwiches, snacks, cheap sweets, and daily essentials."
+description: "First visit to a Japanese convenience store? The starter list of what locals buy: onigiri, sandwiches, bread, desserts, ice cream, drinks, essentials."
 stage: first-trip
 domain: shopping
 tags: [convenience-store, food, shopping, first-trip]
 chain: [seven-eleven, familymart, lawson]
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-checkedAt: "2026-11-26"
+updatedAt: "2026-11-28"
+checkedAt: "2026-11-28"
 heroImage: "./images/hero.svg"
 heroAlt: "Editorial illustration of convenience store shelves with onigiri, sandwiches, drinks, and snacks"
-draft: true
+draft: false
 measured:
   - item: "Onigiri (salmon)"
     priceJpy: 0
@@ -30,6 +30,18 @@ measured:
     place: "To be measured"
     note: "PLACEHOLDER — replace with measured price before publishing"
   - item: "Umaibo (dagashi snack stick)"
+    priceJpy: 0
+    place: "To be measured"
+    note: "PLACEHOLDER — replace with measured price before publishing"
+  - item: "Konbini dessert (Lawson Uchi Café Premium Roll Cake)"
+    priceJpy: 0
+    place: "To be measured"
+    note: "PLACEHOLDER — replace with measured price before publishing"
+  - item: "Garigari-kun (soda ice candy)"
+    priceJpy: 0
+    place: "To be measured"
+    note: "PLACEHOLDER — replace with measured price before publishing"
+  - item: "Melonpan (cookie-crusted bun)"
     priceJpy: 0
     place: "To be measured"
     note: "PLACEHOLDER — replace with measured price before publishing"
@@ -55,6 +67,22 @@ phrasesAsked:
         romaji: "Tennai de tabemasu"
         en: "I'll eat in the store."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "おにぎりはどこですか？"
     romaji: "Onigiri wa doko desu ka?"
     en: "Where are the onigiri (rice balls)?"
@@ -71,6 +99,14 @@ phrasesSay:
     romaji: "Koohii no hotto, emu saizu o kudasai"
     en: "A hot coffee, medium size, please."
     situation: "Said at the register when you buy machine coffee. You receive an empty cup, then brew it yourself at the coffee machine. Say 'aisu' instead of 'hotto' for iced coffee."
+  - jp: "ごちそうさまでした"
+    romaji: "Gochisousama deshita"
+    en: "Thank you for the meal."
+    situation: "The standard closing phrase of every meal in Japan. At a konbini it fits when you have eaten in the eat-in corner — say it at the register or to staff as you leave."
+  - jp: "おいしかったです"
+    romaji: "Oishikatta desu"
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "If I can only buy three things on my first visit, what should they be?"
@@ -80,6 +116,8 @@ faq:
   - question: "Can I eat inside the store?"
     answer: "Some stores have a small eat-in corner. If you eat there, tell the staff at the register — food eaten in-store is taxed at 10% instead of the 8% takeout rate, and the staff will ask. The eat-in corner is for eating what you bought in that store, not a general rest lounge."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 The first time you walk into a Japanese convenience store, the problem is not finding something to buy. It is that everything looks worth buying: shelves of rice balls wrapped like small puzzles, sandwiches cut into perfect triangles, desserts in cups, fried chicken glowing in a glass case by the register. Japanese convenience stores — konbini — stock around 3,000 items in a space smaller than many hotel lobbies, and the selection turns over constantly.
 
@@ -97,6 +135,20 @@ The egg sandwich — soft white bread, no crusts, filled with finely chopped egg
 
 → Detailed guide: Konbini sandwiches (coming soon)
 
+## Bread: the shelf that evolved on its own
+
+Japanese bread did not develop as a copy of European bread — it evolved along its own island path, and the konbini bread shelf is where the results line up. The direction is soft, sweet, and filled: buns stuffed with sweet bean paste, curry, custard, chocolate, and things no European baker would put inside bread. Four to meet first:
+
+**Anpan** — a soft round bun filled with sweet red bean paste (anko). Invented in Tokyo in 1874, it is arguably the first original Japanese bread, and the small bump in the center marks where the filling sits. Sweet beans in bread sounds wrong to many visitors, and converts most of them.
+
+**Melonpan** — a bun wearing a crisp cookie crust scored in a melon-like grid. Here is the surprise: despite the name, a standard melonpan contains no melon at all — the name is the pattern. (Melon-cream versions exist, as the exception.) The crust is the point, so eat it the day you buy it.
+
+**Pizza pan** — *pan* is the Japanese word for bread, and pizza bread is exactly what it sounds like: a small flat bread topped with tomato sauce, cheese, and sausage or peppers, baked like a hand-sized pizza that never met Italy. It is a savory lunch bread, sold wrapped, eaten as it is or warmed at the register.
+
+**Yakisoba pan** — stir-fried noodles packed into a hot-dog roll, often with pickled red ginger and a stripe of mayonnaise. Carbs inside carbs, and a beloved school-lunch classic. If you want one photograph that explains Japanese bread evolution to people back home, this is it.
+
+→ Detailed guide: Konbini bread (coming soon)
+
 ## Drinks: unsweetened is the default
 
 The drinks wall is where visitors make their first mistake: in Japan, bottled teas are **unsweetened** unless the label says otherwise. Green tea, barley tea, and black oolong are everyday drinks, not health products. Coffee comes hot in small cans or bottles (look for the red "hot" markers on the shelf) and iced in cups you fill at the machine by the register. Each category — canned coffee, tea, juice, and the rotating cast of limited drinks — rewards a closer look.
@@ -105,15 +157,29 @@ The drinks wall is where visitors make their first mistake: in Japan, bottled te
 
 ## Hot snacks: order at the register
 
-The glass case next to the register holds fried chicken, croquettes, steamed buns, and (in winter) oden, a simmered dish locals queue for. You do not serve yourself: you tell the staff what you want ("kore o kudasai" — this one, please). FamilyMart's Famichiki fried chicken is the most famous single item in this category.
+The glass case next to the register holds fried chicken, croquettes, and steamed buns. You do not serve yourself: you tell the staff what you want ("kore o kudasai" — this one, please). FamilyMart's Famichiki fried chicken is the most famous single item in this category. One winter resident of this corner is deliberately *not* on the starter list — the steaming oden pot. It gets its own preview below.
 
 → Detailed guide: Konbini snacks and hot food (coming soon)
+
+## Konbini sweets: the dessert shelf is a serious department
+
+Do not mistake the chilled dessert shelf for an afterthought. Konbini sweets are a national obsession with their own TV segments: each chain runs a dessert line — Lawson's is **Uchi Café**, famous for its Premium Roll Cake — and the case holds roll cakes, cream puffs, puddings, parfaits, and seasonal limited desserts that rotate every few weeks. The shock is the quality: these are patisserie-adjacent desserts at a few hundred yen, sold at 3 a.m. The local rule is simple — if a dessert carries a "limited" sticker and looks good, buy it now. It will not be there on your last day.
+
+→ Detailed guide: Konbini sweets (coming soon)
 
 ## Dagashi: the 10-yen sweets shelf
 
 Dagashi are traditional cheap sweets and snacks, priced for a child's allowance — some still cost around 10 to 30 yen. The Umaibo, a puffed corn stick in flavors from takoyaki to cheese, is the icon. You will find dagashi in a small section of the snacks aisle, and they make the lightest, cheapest, most conversation-starting souvenirs you can carry home.
 
 → Detailed guide: Dagashi — Japan's penny candies (coming soon)
+
+## Seasonal: ice cream in summer, oden in winter
+
+**Summer — the freezer case.** Konbini ice cream is a category of its own: premium cups (Häagen-Dazs minis are a konbini staple), chocolate-covered bars, and the icon — **Garigari-kun**, a soda-flavored ice candy on a stick that costs under 100 yen and is practically the official taste of Japanese summer. Limited flavors appear and vanish all season, and locals track them the way they track the desserts.
+
+**Winter — oden, and a deliberate preview.** From autumn into winter, a steaming case appears next to the register: **oden**, a simmering pot of daikon radish, boiled eggs, fish cakes, and konnyaku in dashi. It smells wonderful and locals love it — but it is *not* a first-timer item. Oden is self-service: you take a container, choose your own pieces with tongs, ask for broth over them, and keep count for the register. That is a second-trip skill, so this page only points at it. When you see the steam rising by the register in winter, you will know what it is — the full ritual is waiting in the Second Trip guide.
+
+→ Detailed guide: Oden, the advanced class (Second Trip guide, coming soon)
 
 ## Beyond food: daily essentials and disaster goods
 
@@ -151,6 +217,10 @@ Item categories and store practices on this page reflect the three major chains 
 - Buy and photograph: salmon onigiri, tuna-mayo onigiri, egg sandwich at all three chains; record prices
 - Buy: bottled green tea, canned hot coffee, Famichiki (FamilyMart), one Lawson Uchi Café dessert; record prices
 - Buy: Umaibo (2 flavors) and one more dagashi; record prices
+- Buy: Lawson Uchi Café Premium Roll Cake and one 7-Eleven dessert; record prices
+- Buy: Garigari-kun (soda) and one premium ice cream cup; record prices
+- Buy: anpan, melonpan, pizza bread, yakisoba pan; record prices; photograph the bread shelf
+- Winter only: photograph the oden case by the register (for the Second Trip oden guide, not this page)
 - Photograph: onigiri shelf, drinks wall, hot-snack case, daily goods aisle, disaster goods corner (store exteriors/shelves only where permitted; otherwise purchased items at home)
 - Confirm: which nearby stores have eat-in corners and their current tax-rate question wording
 - Links: point each category section to its detailed guide once published

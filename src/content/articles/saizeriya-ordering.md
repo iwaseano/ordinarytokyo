@@ -72,6 +72,22 @@ phrasesAsked:
         romaji: "Ato, kore mo onegai shimasu"
         en: "And this one too, please. (Point at the menu.)"
 phrasesSay:
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "スマホがないのですが、直接注文できますか？"
     romaji: "Sumaho ga nai no desu ga, chokusetsu chuumon dekimasu ka?"
     en: "I don't have a smartphone — can I order directly?"

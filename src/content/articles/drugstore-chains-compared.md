@@ -57,6 +57,26 @@ phrasesAsked:
         romaji: "Daijoubu desu"
         en: "No, thank you."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "頭痛薬はどこですか？"
     romaji: "Zutsuu-yaku wa doko desu ka?"
     en: "Where is the headache medicine?"
@@ -82,6 +102,8 @@ faq:
   - question: "How does tax-free shopping work at drugstores now?"
     answer: "As of the rules checked on 2026-11-26, tax-free shopping in Japan moved to a refund system in November 2026: you pay the full tax-included price in the store, and the consumption tax is refunded after customs checks your goods when you leave Japan. Keep the items and your receipts together and unused until departure, and check the latest official rules before a large purchase, because this system is new."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 You will walk into a Japanese drugstore within your first two days in Tokyo — for a headache, for sunscreen, for the skincare everyone back home asked you to bring. And the first surprise is the scale of the place. A Japanese drugstore is not a pharmacy with a few shelves attached. It is a pharmacy, a cosmetics floor, and a small supermarket compressed into one bright, dense, slightly overwhelming room.
 
