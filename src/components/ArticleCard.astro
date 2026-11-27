@@ -15,12 +15,8 @@ const domainTitle = domainInfo(article.data.domain).title;
 
 <article class="article-card">
 	<a class="article-card__link" href={getArticlePath(article.data.slug)}>
-		<div class="article-card__art" aria-hidden="true">
-			<span>{domainTitle}</span>
-			<strong>{article.data.title}</strong>
-		</div>
+		<p class="article-card__meta">{stageTitle} · {domainTitle}</p>
 		<div class="article-card__body">
-			<p class="eyebrow">{stageTitle} · {domainTitle}</p>
 			<h3>{article.data.title}</h3>
 			<p>{article.data.description}</p>
 			<time datetime={article.data.publishedAt.toISOString()}>
