@@ -268,10 +268,13 @@ const structuredData = JSON.stringify([
 					const imageUrl = `/cards/${data.slug}/${index + 1}.svg`;
 					return (
 						<div class="show-card">
-							<img src={imageUrl} alt={`Phrase card: ${phrase.jp} — ${phrase.en}`} width="1200" height="630" loading="lazy" />
 							<div class="show-card__content">
 								<p class="phrase-card__jp" lang="ja">{phrase.jp}</p>
+								<p class="phrase-card__romaji">{phrase.romaji}</p>
 								<p>{phrase.en}</p>
+							</div>
+							<img src={imageUrl} alt={`Phrase card: ${phrase.jp} — ${phrase.en}`} width="1200" height="630" loading="lazy" />
+							<div class="show-card__content">
 								<a href={imageUrl} download={`${data.slug}-phrase-${index + 1}.svg`} data-card-save>
 									Save phrase card
 								</a>

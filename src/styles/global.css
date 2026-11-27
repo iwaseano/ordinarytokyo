@@ -621,7 +621,8 @@ img {
 }
 
 .say-card .phrase-card__jp {
-	font-size: clamp(1.8rem, 6vw, 2.35rem);
+	font-size: clamp(32px, 6vw, 2.35rem);
+	overflow-wrap: anywhere;
 }
 
 .say-card__situation {
@@ -662,7 +663,8 @@ img {
 }
 
 .show-card__content .phrase-card__jp {
-	font-size: 1.6rem;
+	font-size: clamp(32px, 6vw, 2.35rem);
+	overflow-wrap: anywhere;
 }
 
 .show-card__content a {
