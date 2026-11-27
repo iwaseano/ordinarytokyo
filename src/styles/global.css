@@ -414,6 +414,12 @@ img {
 	background: white;
 }
 
+.article-hero--fallback {
+	height: clamp(6rem, 30vw, 10rem);
+	object-fit: contain;
+	background: var(--color-bg);
+}
+
 .quick-answer {
 	margin-block: 1.5rem;
 	padding: 1.35rem 1.5rem;
