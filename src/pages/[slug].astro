@@ -186,32 +186,35 @@ const structuredData = JSON.stringify([
 
 		<section id="measured" aria-labelledby="measured-heading">
 			<h2 id="measured-heading">Measured in Tokyo</h2>
-			<div class="data-table-wrap">
-				<table class="data-table">
-					<thead>
-						<tr>
-							<th scope="col">Item</th>
-							<th scope="col">Price</th>
-							<th scope="col">Place and notes</th>
-						</tr>
-					</thead>
-					<tbody>
-						{data.measured.map((row) => (
+			<div class="table-container">
+				<p class="table-scroll-hint">Scroll horizontally if needed to see the full table.</p>
+				<div class="data-table-wrap" role="group" aria-label="Table (scroll horizontally if needed)" tabindex="0">
+					<table class="data-table">
+						<thead>
 							<tr>
-								<td>{row.item}</td>
-								<td class="price-cell">
-									{formatJpy(row.priceJpy)}
-									<small>{formatUsd(row.priceJpy, SITE.currency.usdJpyRate)}</small>
-								</td>
-								<td>
-									<strong>{row.place}</strong>
-									<br />
-									{row.note}
-								</td>
+								<th scope="col">Item</th>
+								<th scope="col">Price</th>
+								<th scope="col">Place and notes</th>
 							</tr>
-						))}
-					</tbody>
-				</table>
+						</thead>
+						<tbody>
+							{data.measured.map((row) => (
+								<tr>
+									<td>{row.item}</td>
+									<td class="price-cell">
+										{formatJpy(row.priceJpy)}
+										<small>{formatUsd(row.priceJpy, SITE.currency.usdJpyRate)}</small>
+									</td>
+									<td>
+										<strong>{row.place}</strong>
+										<br />
+										{row.note}
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
 			</div>
 			<p class="exchange-note">
 				USD conversions use ¥{SITE.currency.usdJpyRate} per US$1 (reference rate checked
@@ -347,6 +350,32 @@ const structuredData = JSON.stringify([
 	</div>
 	<a class="mobile-card-cta" href="#show-cards">Save a phrase card</a>
 	<script>
+		const tableContainers = document.querySelectorAll('.table-container');
+		function updateTableScrollHints() {
+			for (const container of tableContainers) {
+				const wrapper = container.querySelector('.data-table-wrap');
+				const hint = container.querySelector('.table-scroll-hint');
+				if (!(wrapper instanceof HTMLElement) || !(hint instanceof HTMLElement)) continue;
+				const scrollable = wrapper.scrollWidth > wrapper.clientWidth;
+				hint.hidden = !scrollable;
+				if (scrollable) wrapper.tabIndex = 0;
+				else wrapper.removeAttribute('tabindex');
+			}
+		}
+		updateTableScrollHints();
+		if (typeof ResizeObserver !== 'undefined') {
+			const tableObserver = new ResizeObserver(updateTableScrollHints);
+			for (const container of tableContainers) {
+				const wrapper = container.querySelector('.data-table-wrap');
+				const table = wrapper?.querySelector('table');
+				if (wrapper) tableObserver.observe(wrapper);
+				if (table) tableObserver.observe(table);
+			}
+		} else {
+			window.addEventListener('resize', updateTableScrollHints);
+			document.fonts?.ready.then(updateTableScrollHints);
+		}
+
 		const mobileCardCta = document.querySelector('.mobile-card-cta');
 		const articleHero = document.querySelector('.article-hero');
 		const phraseCards = document.querySelector('#show-cards');
