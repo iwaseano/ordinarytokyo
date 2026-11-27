@@ -492,6 +492,10 @@ img {
 	margin-top: 2rem;
 }
 
+.article-body a {
+	overflow-wrap: anywhere;
+}
+
 .article-body img {
 	height: auto;
 	border-radius: 12px;
