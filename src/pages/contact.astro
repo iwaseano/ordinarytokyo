@@ -18,8 +18,8 @@ const contactUrl = import.meta.env.PUBLIC_CONTACT_URL;
 			{
 				contactUrl ? (
 					<>
-						<p>The contact form is hosted on Google Forms. You'll need to fill it out on Google's website.</p>
-						<p><a class="button" href={contactUrl} rel="noopener noreferrer">Open the contact form</a></p>
+						<p>The contact form is hosted on Google Forms and opens in a new tab. You'll need to fill it out on Google's website.</p>
+						<p><a class="button" href={contactUrl} target="_blank" rel="noopener noreferrer">Open the contact form</a></p>
 					</>
 				) : (
 					<p class="empty-state">The external contact form has not been configured yet.</p>
