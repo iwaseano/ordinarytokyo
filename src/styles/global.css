@@ -251,36 +251,19 @@ img {
 	text-decoration: none;
 }
 
-.article-card__art {
-	display: flex;
-	min-height: 175px;
-	flex-direction: column;
-	justify-content: space-between;
-	padding: 1.3rem;
+.article-card__meta {
+	margin: 0;
+	padding: 0.65rem 1.2rem;
 	background: linear-gradient(135deg, #edf1f5, #e0e8ed);
 	color: var(--color-primary);
-}
-
-.article-card__art span {
-	font-size: 0.78rem;
-	font-weight: 700;
+	font-size: 0.7rem;
+	font-weight: 750;
+	letter-spacing: 0.1em;
 	text-transform: uppercase;
-	letter-spacing: 0.08em;
-}
-
-.article-card__art strong {
-	max-width: 15ch;
-	font-size: 1.3rem;
-	line-height: 1.25;
 }
 
 .article-card__body {
 	padding: 1.2rem;
-}
-
-.article-card__body .eyebrow {
-	margin-bottom: 0.55rem;
-	font-size: 0.7rem;
 }
 
 .article-card__body h3 {
@@ -431,6 +414,12 @@ img {
 	background: white;
 }
 
+.article-hero--fallback {
+	height: clamp(6rem, 30vw, 10rem);
+	object-fit: contain;
+	background: var(--color-bg);
+}
+
 .quick-answer {
 	margin-block: 1.5rem;
 	padding: 1.35rem 1.5rem;
@@ -492,39 +481,63 @@ img {
 	margin-top: 2rem;
 }
 
+.article-body a {
+	overflow-wrap: anywhere;
+}
+
 .article-body img {
 	height: auto;
 	border-radius: 12px;
 }
 
+.table-container {
+	margin-block: 1rem;
+}
+
+.table-scroll-hint {
+	margin: 0 0 0.4rem;
+	color: #414954;
+	font-size: 0.85rem;
+}
+
 .data-table-wrap {
 	overflow-x: auto;
-	margin-block: 1rem;
 	border: 1px solid var(--color-border);
 	border-radius: 10px;
 	background: white;
 }
 
-.data-table {
+.data-table-wrap:focus-visible {
+	outline: 3px solid var(--color-accent);
+	outline-offset: 3px;
+}
+
+.data-table,
+.article-body .data-table-wrap table {
 	width: 100%;
 	border-collapse: collapse;
 	font-size: 0.94rem;
 }
 
 .data-table th,
-.data-table td {
+.data-table td,
+.article-body .data-table-wrap th,
+.article-body .data-table-wrap td {
 	padding: 0.8rem;
 	border-bottom: 1px solid var(--color-border);
 	text-align: left;
 	vertical-align: top;
 }
 
-.data-table th {
+.data-table th,
+.article-body .data-table-wrap th {
 	background: var(--color-muted);
 	color: var(--color-primary);
+	font-weight: 700;
 }
 
-.data-table tr:last-child td {
+.data-table tr:last-child td,
+.article-body .data-table-wrap tr:last-child td {
 	border-bottom: 0;
 }
 
@@ -606,12 +619,14 @@ img {
 }
 
 .say-card {
+	scroll-margin-top: 145px;
 	border: 2px solid var(--color-primary);
 	background: white;
 }
 
 .say-card .phrase-card__jp {
-	font-size: clamp(1.8rem, 6vw, 2.35rem);
+	font-size: clamp(32px, 6vw, 2.35rem);
+	overflow-wrap: anywhere;
 }
 
 .say-card__situation {
@@ -652,7 +667,8 @@ img {
 }
 
 .show-card__content .phrase-card__jp {
-	font-size: 1.6rem;
+	font-size: clamp(32px, 6vw, 2.35rem);
+	overflow-wrap: anywhere;
 }
 
 .show-card__content a {
@@ -765,9 +781,19 @@ img {
 	margin-block: 0.4rem;
 }
 
+@media (min-width: 761px) and (max-width: 1024px) {
+	.domain-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
 @media (max-width: 760px) {
 	body {
 		font-size: 16px;
+	}
+
+	.site-header {
+		position: static;
 	}
 
 	.site-header__inner {
@@ -819,14 +845,23 @@ img {
 	}
 
 	.toc {
-		top: 112px;
+		top: 0;
+		padding: 0.2rem 0.5rem;
+		scrollbar-width: thin;
 	}
 
+	.toc a {
+		min-height: 44px;
+	}
+
+	.article-body,
+	.article-body h2,
 	.phrase-section,
+	.say-card,
 	#measured,
 	.show-cards,
 	#faq {
-		scroll-margin-top: 185px;
+		scroll-margin-top: 5rem;
 	}
 
 	.show-card-grid {
@@ -837,12 +872,12 @@ img {
 		position: fixed;
 		right: 1rem;
 		bottom: 1rem;
-		left: 1rem;
 		z-index: 8;
 		display: flex;
 		min-height: 50px;
 		align-items: center;
 		justify-content: center;
+		padding-inline: 1rem;
 		border-radius: 10px;
 		background: var(--color-primary);
 		box-shadow: 0 4px 18px rgb(0 0 0 / 20%);

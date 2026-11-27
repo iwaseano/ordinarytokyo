@@ -17,3 +17,7 @@ export async function getSortedArticles() {
 export function getArticlePath(slug: string): string {
 	return `/${slug}/`;
 }
+
+export function getSayPhraseId(index: number): string {
+	return `say-phrase-${index + 1}`;
+}
