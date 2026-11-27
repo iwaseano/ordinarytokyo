@@ -57,6 +57,26 @@ phrasesAsked:
         romaji: "Ato, misoshiru o tonjiru ni kaete kudasai"
         en: "Also, please change the miso soup to pork soup (tonjiru)."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "ご飯のおかわりをお願いします"
     romaji: "Gohan no okawari o onegai shimasu"
     en: "Another serving of rice, please."
@@ -73,6 +93,10 @@ phrasesSay:
     romaji: "Gochisousama deshita"
     en: "Thank you for the meal."
     situation: "Said to staff as you leave after paying. The standard closing phrase at any Japanese restaurant."
+  - jp: おいしかったです
+    romaji: Oishikatta desu
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "What exactly is a teishoku?"
@@ -82,6 +106,8 @@ faq:
   - question: "Is the free rice refill really free at Yayoiken?"
     answer: "Yes — at most Yayoiken locations, plain white rice refills are self-service and free: you take your bowl to the refill machine and press the button for the amount you want. It is meant for finishing your meal, not for ordering extra side dishes around endless rice."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 Fast food in Japan is not only burgers and beef bowls. On any weekday lunch hour, the longest lines of office workers often lead into a teishoku restaurant — a place serving set meals: one main dish, a bowl of rice, miso soup, pickles, and a small side or two, all arriving on one tray. It is the meal Japanese people mean when they say they ate "a proper meal" (chanto shita gohan). Nothing is fancy, and that is exactly the point: balanced, filling, reasonably priced, and the same quality every single day.
 

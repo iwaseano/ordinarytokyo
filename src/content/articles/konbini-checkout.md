@@ -83,6 +83,18 @@ phrasesAsked:
         romaji: "Hai"
         en: "Yes. (A small nod is enough — just walk to the register.)"
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
   - jp: "これをください"
     romaji: "Kore o kudasai"
     en: "This one, please."
@@ -108,6 +120,8 @@ faq:
   - question: "Is it rude to say nothing and just point?"
     answer: "No. Checkout in Japan is quick and quiet. Pointing, nodding, and showing the phrases on this page is completely normal, and staff are used to it."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 A Japanese convenience store checkout takes about thirty seconds, and almost all of it is scripted. The staff are not making conversation — they are working through the same short list of questions they ask every customer, hundreds of times a day. Once you know the list, the whole thing becomes predictable, even with no Japanese at all.
 

@@ -64,6 +64,26 @@ phrasesAsked:
         romaji: "Mochikaeri de onegai shimasu"
         en: "Takeout, please."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "トッピングにチーズを追加してください"
     romaji: "Toppingu ni chiizu o tsuika shite kudasai"
     en: "Please add cheese as a topping."
@@ -185,7 +205,7 @@ There is no customisation system to learn and no spice dial to set: one roux, ho
 - **No tipping, anywhere.** All four chains run on exact prices. Coins left behind will be treated as forgotten change.
 - **Go easy on the free pickles.** Fukujinzuke (and the cabbage and table seasonings) are shared, free, and refilled by the store — take what you will actually eat, use the serving spoon or tongs provided, and do not heap a mountain onto the plate as a free side dish.
 - **Do not linger at lunch peak.** These are fast-turnover restaurants. At midday, office workers are queueing behind you; finishing, clearing your tray if the store is self-service, and leaving promptly is the local rhythm. Off-peak, nobody will rush you.
-- **Keep your tray and table as you found them.** Return trays to the return counter where one exists, and wipe up your own spills with the table cloth or a napkin.
+- **Leave the tray on the table at these four chains.** CoCo Ichi, Go Go, My Curry Shokudo, and Hinoya are staff-clearing restaurants — there is no return counter, and wandering off with your tray in search of one only confuses everyone. What is expected of you is smaller: wipe up your own spills with the napkin or table cloth, leave the dishes grouped neatly, and push your chair in. The exception is a food-court location — there the food court's rules win, and the tray goes back to the shared return stand.
 - **Photograph your own food, not the room.** A quick photo of your plate is normal. Filming staff, other customers, or the whole dining room is not.
 
 ## How locals actually choose

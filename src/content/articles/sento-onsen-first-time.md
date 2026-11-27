@@ -61,6 +61,26 @@ phrasesAsked:
         romaji: "Motte imasu"
         en: "I have one."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "入浴料をお願いします"
     romaji: "Nyuuyoku-ryou o onegai shimasu"
     en: "Bathing admission, please."
@@ -86,6 +106,8 @@ faq:
   - question: "Do I need to bring my own soap and shampoo?"
     answer: "At a traditional sento, usually yes — bring your own or buy small single-use packets at the counter. At most super sento, shampoo, conditioner, and body soap are provided free at the washing stations. A small towel for washing and a larger one for drying are the two items you always need."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 On a cold evening in Tokyo, the warmest room in the neighborhood is not a restaurant or a bar. It is the public bath. Grandparents, office workers, students, and small children all end up in the same steaming water, and for many Tokyo residents this is not a special occasion at all — it is what you do when your own bathroom feels too small, too cold, or too ordinary.
 

@@ -47,6 +47,22 @@ phrasesAsked:
         romaji: "Daijoubu desu"
         en: "No, thank you."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
   - jp: "両替できますか？"
     romaji: "Ryougae dekimasu ka?"
     en: "Can you break a bill / make change?"
@@ -74,6 +90,8 @@ faq:
   - question: "Can I take photos inside the store?"
     answer: "Be careful. Photography rules vary by store, and photographing other customers is never acceptable. The safe pattern: photograph only items you have bought, after purchase, outside the store. If you want a shelf photo for reference, ask staff first — and accept a no without argument."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 Every visitor to Japan eventually has the same small emergency: a broken umbrella, a missing cable, an extra bag for souvenirs, a rainy-day activity for a child. Locals solve all of these the same way — they walk into a 100-yen shop. There are thousands of them, they sit inside stations and on every shopping street, and three chains account for most of them.
 

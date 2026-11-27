@@ -67,6 +67,26 @@ phrasesAsked:
         romaji: "Hai, onegai shimasu"
         en: "Yes, please."
 phrasesSay:
+  - jp: すみません
+    romaji: Sumimasen
+    en: "Excuse me."
+    situation: "The opener for everything: calling staff over, stopping someone to ask a question, smoothing over a small bump. If you learn one Japanese word for the whole trip, this is the one."
+  - jp: これをください
+    romaji: Kore o kudasai
+    en: "This one, please."
+    situation: "Point at the menu, the shelf, or the item while you say it. The universal order when names are too hard to say — pointing plus this phrase always works."
+  - jp: もう一度お願いします
+    romaji: Mou ichido onegai shimasu
+    en: "Once more, please."
+    situation: "When an answer came too fast to catch. Staff will repeat it more slowly, and often add pointing. A smile with this phrase and nobody minds being asked."
+  - jp: 大丈夫です
+    romaji: Daijoubu desu
+    en: "It's OK. / I'm fine. / No, thank you."
+    situation: "The all-purpose soft answer: declining an extra, saying a wait is fine, reassuring staff after a spill. A small hand wave with it makes it a polite no-thanks."
+  - jp: ありがとうございます
+    romaji: Arigatou gozaimasu
+    en: "Thank you."
+    situation: "The universal thank-you, for any shop, station, or street. When the help is already finished — a meal eaten, a question answered — the past form, arigatou gozaimashita, is the polished version."
   - jp: "とりあえず生ビールをお願いします"
     romaji: "Toriaezu nama biiru o onegai shimasu"
     en: "A draft beer to start with, please."
@@ -87,6 +107,14 @@ phrasesSay:
     romaji: "Okaikei o onegai shimasu"
     en: "The bill, please."
     situation: "Said to any staff member, or take your bill slip to the register. Splitting is often done at the register — one person paying for the table is also completely normal."
+  - jp: ごちそうさまでした
+    romaji: Gochisousama deshita
+    en: "Thank you for the meal."
+    situation: "Said at the register after paying, or to staff as you leave. It is the standard way to close a meal in Japan and staff hear it all day."
+  - jp: おいしかったです
+    romaji: Oishikatta desu
+    en: "It was delicious."
+    situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
 affiliateLinks: []
 faq:
   - question: "What is otoshi, and can I refuse it?"
@@ -98,6 +126,8 @@ faq:
   - question: "How is the bill usually handled?"
     answer: "One bill for the table, settled at the end — at the register or at your table depending on the chain. Splitting evenly (warikan) is the default among friends and coworkers; asking the register to split by person is possible at some chains but not assumed. There is no tip on top, ever."
 ---
+
+**About the phrases in this guide:** every phrase below comes as a card. If pronouncing Japanese feels like too much, just open this page and show the card to the staff — you'll be understood. And if you do try saying it out loud, however it comes out, they'll be even happier that you tried.
 
 Every neighborhood in Tokyo has a moment, around seven in the evening, when the izakaya signs switch on and the first round of draft beer goes out. The izakaya — Japan's casual drinking-and-eating house — is where coworkers decompress, where old friends meet, and where a huge share of ordinary Japanese social life actually happens. It is not a bar with snacks, and it is not a restaurant that happens to serve beer. It is its own institution, with its own rules.
 
