@@ -87,7 +87,7 @@ phrasesSay:
     romaji: "Oishikatta desu"
     en: "It was delicious."
     situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
-affiliateLinks: []
+affiliateLinks: ["amazon-bulldog-tonkatsu-sauce"]
 faq:
   - question: "What exactly is katsudon?"
     answer: "A bowl of rice topped with a deep-fried pork cutlet (tonkatsu) simmered briefly with sliced onion in a sweet soy-dashi broth and bound with beaten egg. It is hot, filling, and one of the most standard fast lunches in Japan."
