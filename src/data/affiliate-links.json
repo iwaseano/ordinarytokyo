@@ -14,5 +14,17 @@
   "amazon-itoen-oi-ocha": {
   "label": "Ito En Oi Ocha unsweetened green tea, pack of 12 (Amazon)",
   "url": "https://link.amazon/B07Fnz7Sx"
+  },
+  "rakuten-ichiran-ramen-3box": {
+  "label": "Ichiran ramen, 5 meals x 3 boxes (Rakuten)",
+  "url": "https://hb.afl.rakuten.co.jp/ichiba/5a176e27.2a5fa17c.5a176e28.bb13761b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fh-momo%2F4562214820936set%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
+  },
+"rakuten-ichiran-ramen-assortment": {
+  "label": "Ichiran ramen two-flavor assortment, 5 meals (Rakuten)",
+  "url": "https://hb.afl.rakuten.co.jp/ichiba/5a176a7e.87f4d4fe.5a176a7f.2edb159b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcleanwarehouse%2F251106-01%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MCwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9"
+  },
+"amazon-ichiran-ramen-kit": {
+  "label": "Ichiran take-home tonkotsu ramen kit (Amazon)",
+  "url": "https://link.amazon/B09oZcYZA"
   }
 }

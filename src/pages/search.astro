@@ -1,0 +1,47 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+---
+
+<SiteLayout title="Search guides | Ordinary Tokyo" description="Search Ordinary Tokyo's practical guides to everyday life in Japan." canonicalPath="/search/">
+	<div class="page-shell">
+		<div class="page-intro">
+			<p class="eyebrow">Explore the guides</p>
+			<h1>Search guides</h1>
+			<p>Search our articles for places, food, and everyday tips.</p>
+		</div>
+		{import.meta.env.DEV ? (
+			<p>Search is available in the built site. Run a build and open the preview to try it.</p>
+		) : (
+			<div class="search-panel">
+				<link href="/pagefind/pagefind-component-ui.css" rel="stylesheet" />
+				<p id="search-status" role="status">Search requires JavaScript. Please browse the guides using the navigation above.</p>
+				<pagefind-input placeholder="Search guides"></pagefind-input>
+				<pagefind-summary></pagefind-summary>
+				<pagefind-results hide-sub-results></pagefind-results>
+			</div>
+		)}
+	</div>
+</SiteLayout>
+
+<script>
+	const status = document.querySelector('#search-status');
+	if (status) {
+		status.textContent = 'Loading search…';
+		const moduleUrl = '/pagefind/pagefind-component-ui.js';
+		import(/* @vite-ignore */ moduleUrl).then(() => {
+			status.remove();
+		}).catch((error: unknown) => {
+			console.error('Failed to load search:', error);
+			status.textContent = 'Search could not be loaded. Please try again later.';
+		});
+	}
+</script>
+
+<style>
+	.search-panel {
+		max-width: 760px;
+		--pf-text: var(--color-text);
+		--pf-outline-focus: var(--color-accent);
+		--pf-font: Inter, "Public Sans", "Noto Sans JP", Arial, sans-serif;
+	}
+</style>

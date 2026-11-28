@@ -122,7 +122,7 @@ const structuredData = JSON.stringify([
 	ogImage={cardImageUrl}
 >
 	<script type="application/ld+json" set:html={structuredData} />
-	<div class="article-shell article-page">
+	<div class="article-shell article-page" data-pagefind-body>
 		<Breadcrumbs items={[{ label: data.title }]} />
 		<header class="article-header">
 			<p class="eyebrow">{stage.title} · {domain.title}</p>
@@ -159,7 +159,7 @@ const structuredData = JSON.stringify([
 			/>
 		)}
 
-		<div class="disclosure">
+		<div class="disclosure" data-pagefind-ignore>
 			<strong>Disclosure:</strong> This page may contain affiliate links. If you use one,
 			we may earn a commission at no extra cost to you.
 		</div>
@@ -263,7 +263,7 @@ const structuredData = JSON.stringify([
 			</div>
 		</section>
 
-		<section id="show-cards" class="show-cards" aria-labelledby="cards-heading">
+		<section id="show-cards" class="show-cards" aria-labelledby="cards-heading" data-pagefind-ignore>
 			<p class="eyebrow">Works offline</p>
 			<h2 id="cards-heading">Phrase cards to show</h2>
 			<div class="show-card-grid">
@@ -290,7 +290,7 @@ const structuredData = JSON.stringify([
 
 		{
 			affiliateItems.length > 0 && (
-				<section aria-labelledby="affiliate-heading">
+				<section aria-labelledby="affiliate-heading" data-pagefind-ignore>
 					<h2 id="affiliate-heading">Useful links</h2>
 					<ul class="affiliate-list">
 						{affiliateItems.map((link) => (
@@ -319,7 +319,7 @@ const structuredData = JSON.stringify([
 			)
 		}
 
-		<div class="author-box">
+		<div class="author-box" data-pagefind-ignore>
 			<div class="author-box__mark" aria-hidden="true">O</div>
 			<div>
 				<strong>{SITE.author}</strong>
@@ -327,7 +327,7 @@ const structuredData = JSON.stringify([
 			</div>
 		</div>
 
-		<p class="small-note">
+		<p class="small-note" data-pagefind-ignore>
 			Checked on {formatDate(data.checkedAt)} · Last updated {formatDate(data.updatedAt)}.
 			Prices and services can change; confirm details at the store.
 		</p>
@@ -336,7 +336,7 @@ const structuredData = JSON.stringify([
 
 		{
 			related.length > 0 && (
-				<section class="related" aria-labelledby="related-heading">
+				<section class="related" aria-labelledby="related-heading" data-pagefind-ignore>
 					<div class="section-heading">
 						<div>
 							<p class="eyebrow">Keep exploring</p>

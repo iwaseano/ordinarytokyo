@@ -7,24 +7,24 @@ domain: food
 tags: [ramen, chain-restaurants, comparison, first-trip]
 chain: [ichiran, ippudo, tenkaippin]
 publishedAt: "2026-11-26"
-updatedAt: "2026-11-26"
-checkedAt: "2026-11-26"
-heroImage: "./images/hero.svg"
-heroAlt: "Three bowls of ramen from different Japanese chains side by side on a counter"
-draft: true
+updatedAt: "2026-11-29"
+checkedAt: "2026-11-29"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of noodles lifted from a ramen bowl with chopsticks"
+draft: false
 measured:
   - item: "Natural Tonkotsu Ramen (standard bowl)"
-    priceJpy: 0
-    place: "Ichiran, Tokyo"
-    note: "PLACEHOLDER — replace with measured price before publishing"
+    priceJpy: 1180
+    place: "Ichiran, central Tokyo"
+    note: "Official store-menu price for central Tokyo stores (checked 2026-11-29); varies by store, 980 to 1,180 yen nationwide. Replace with the in-store paid price at the field check"
   - item: "Shiromaru Classic (standard bowl)"
-    priceJpy: 0
+    priceJpy: 850
     place: "Ippudo, Tokyo"
-    note: "PLACEHOLDER — replace with measured price before publishing"
+    note: "Base menu price from Ippudo's official menu listings (checked 2026-11-29); varies by store. Replace with the in-store paid price at the field check"
   - item: "Kotteri Ramen (standard bowl)"
-    priceJpy: 0
+    priceJpy: 940
     place: "Tenkaippin, Tokyo"
-    note: "PLACEHOLDER — replace with measured price before publishing"
+    note: "Regular size, from official store menu listings (checked 2026-11-29); varies by store. Replace with the in-store paid price at the field check"
 phrasesAsked:
   - jp: "麺の硬さはいかがですか？"
     romaji: "Men no katasa wa ikaga desu ka?"
@@ -90,10 +90,10 @@ phrasesSay:
     romaji: Oishikatta desu
     en: "It was delicious."
     situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
-affiliateLinks: []
+affiliateLinks: ["amazon-ichiran-ramen-kit","rakuten-ichiran-ramen-assortment","rakuten-ichiran-ramen-3box"]
 faq:
   - question: "Is slurping really okay in Japan?"
-    answer: "Yes — for noodles it is normal and expected. Slurping ramen cools the noodles, carries the aroma, and signals to the shop that you are enjoying the bowl. Nobody at a ramen counter will be offended by the sound; a silent bowl is the unusual one."
+    answer: "Yes — for noodles it is normal and expected, and it is a tasting technique, not just manners: slurping draws air in with the noodles, which spreads the aroma and changes how the bowl tastes, while cooling the noodles on the way in. The same applies to soba and udon. Nobody at a ramen counter will be offended by the sound; a silent bowl is the unusual one."
   - question: "What is kaedama, and when should I order it?"
     answer: "Kaedama is a refill of noodles only, sold cheaply at tonkotsu chains like Ichiran and Ippudo. Order it while broth remains in your bowl — the refill is designed to be added to that broth. If you finish the soup first, there is nothing for the new noodles to go into."
   - question: "Which chain is best for a very first bowl of ramen in Japan?"
@@ -106,15 +106,23 @@ Ramen is the Japanese food most visitors arrive already dreaming about — and t
 
 This page compares the three chains a first-time visitor is most likely to meet in Tokyo — Ichiran, Ippudo, and Tenkaippin — on how you order, what the signature bowl actually is, and which one fits which moment.
 
+One deliberate choice: every shop here is beginner-proof — walk in cold, with no Japanese and no ramen knowledge, and the system carries you. The deep end of ramen (tiny counters with unspoken rules, Jiro-style call-and-response, shops that are famous precisely because they are hard) is real, and it is wonderful — on a second trip, once the basics are in your hands. If you cannot wait that long, Tokyo Station's Ramen Street packs a row of famous shops into one underground floor built for exactly that impatience; it gets its own guide.
+
 ## What is ramen?
 
-Ramen is a bowl built from three parts, and every shop's identity lives in how it balances them:
+Ramen is a bowl built from five parts, and every shop's identity lives in how it combines them:
 
-1. **The broth (suupu).** The soul of the bowl. It can be pork-bone *tonkotsu* (milky, rich), soy-sauce *shoyu* (clear, savory), miso (deep, fermented), salt *shio* (light), or chicken-based. Broth is simmered for hours and is the part the shop is proudest of.
-2. **The noodles (men).** Wheat noodles, usually with an alkaline water called *kansui* that gives them their springy bite and yellow tint. Thickness and firmness vary by region and shop — thin and straight for Hakata-style tonkotsu, thick and wavy for Sapporo miso.
-3. **The toppings (gu).** Sliced roast pork (*chashu*), seasoned egg (*ajitama*), spring onions, bamboo shoots (*menma*), nori seaweed, and pickled ginger, depending on the style.
+1. **The stock (suupu).** The body of the bowl — pork bones, chicken, seafood, vegetables, simmered for hours into the liquid everything else rides on.
+2. **The kaeshi.** The part visitors never hear about and the part that actually flavors the bowl: a concentrated seasoning — soy-sauce-based, miso-based, salt-based — placed at the bottom of the bowl and mixed with the stock at serving time. The flavor names you know (shoyu, miso, shio) describe mostly *this*, plus the stock family.
+3. **The noodles (men).** Wheat noodles, usually with an alkaline water called *kansui* that gives them their springy bite and yellow tint. Thickness, curl, and firmness vary by region and shop.
+4. **The ingredients (gu).** The substantial things in the bowl: sliced roast pork (*chashu*), bamboo shoots (*menma*), spring onions, nori seaweed, bean sprouts.
+5. **The toppings and finish.** The optional layer — seasoned egg (*ajitama*), extra chashu, pickled ginger — plus the flavored oils drizzled on top, which can quietly redefine the whole bowl.
 
-On top of that base, Japan has grown whole subcultures: *iekei* (a Yokohama-born tonkotsu-shoyu hybrid eaten with rice), *Jiro-style* (mountainous portions with garlic and extra fat, ordered through a call-and-response of preferences), tsukemen (cold noodles dipped into a separate concentrated broth), and more. The three chains below are the polished, nationwide end of that world — the right place to learn the basics before the deep end.
+Here is the fact that hooks people for life: the flavor name is not the flavor. Two shops can both serve "shoyu ramen" and taste *nothing* alike, because the stock differs, the kaeshi differs, the noodles differ, and every part multiplies every other part. A shoyu bowl is not a flavor; it is a family name shared by thousands of strangers. That endless difference inside the same word is the entire charm of ramen.
+
+Regions then push the combinations in their own directions. Sapporo built miso ramen with thick, wavy noodles (and a famous butter-and-corn finish). Kitakata does a gentle shoyu with flat, curly noodles — eaten for breakfast. Hakata's tonkotsu is milky and rich with thin, straight noodles designed for refills. Tokyo's own classic is a clear chicken shoyu. Yokohama added *iekei*, a tonkotsu-shoyu hybrid eaten with rice. And the subcultures keep branching: Jiro-style mountains of garlic and fat, tsukemen noodles dipped in concentrated broth, and more.
+
+So calibrate your expectations with one number: eat a single bowl of ramen and you know roughly **one ten-thousandth** of ramen. Japan has tens of thousands of shops, and the combinations above mean no two need taste alike. That arithmetic is exactly why ramen freaks exist — people who happily spend decades, and a significant share of their lives, chasing the other 9,999 parts. The three chains below are the polished, nationwide end of that world: the right place to learn the basics before the deep end.
 
 ## When locals crave ramen
 
@@ -162,7 +170,7 @@ Tenkaippin, from Kyoto, is built around one word: **kotteri**. The broth — chi
 
 ## Manners and what not to do
 
-- **Slurp. Really.** Noodles are eaten with an audible slurp — it cools them, mixes in air, and is simply how ramen is eaten. Lifting noodles silently and waiting for them to cool is the foreign move.
+- **Slurp. Really — it changes the taste.** Noodles are eaten with an audible slurp, and it is not just custom: slurping pulls air in with the noodles, and that air changes the flavor. The aroma blooms, the broth coats the noodles differently, and the bowl literally tastes different slurped than sipped. It also cools the noodles on the way in. The same applies to soba and udon — all Japanese noodles are slurping noodles. Lifting noodles silently and waiting for them to cool is the foreign move, and it quietly costs you flavor.
 - **Chopsticks in one hand, spoon in the other.** The Chinese-style spoon (*renge*) is for broth and small toppings. Use the chopsticks to lift noodles into the spoon or straight to your mouth; drink the last broth from the bowl if you like — finishing it is a compliment, not a requirement.
 - **The counter is a flow.** Ramen shops turn seats over quickly. Eat while it is hot, and when the bowl is done, the meal is done. Lingering over an empty bowl at a crowded counter — phone out, no order — is the one habit locals notice.
 - **Kaedama has a timing.** Order your noodle refill while broth remains, ideally when you are about halfway through the noodles. It arrives fast; drop it in, loosen it, keep eating.
@@ -173,11 +181,14 @@ Tenkaippin, from Kyoto, is built around one word: **kotteri**. The broth — chi
 
 Habit and craving, in that order. Ichiran is the solo default — the bowl you can have at midnight, in silence, tuned exactly to your taste, and its order sheet makes it the chain foreigners and locals alike use as a benchmark. Ippudo is the group and date-safe choice: same tonkotsu family, but a room you can talk in. Tenkaippin is a loyalty, not a compromise — people who say "kotteri" the way others say a football team. And almost nobody is loyal to only one: the rotation follows the mood, which is why all three can survive on the same street.
 
-## What was checked for this page
+## Official links
 
-Ordering flows and menu structures were checked at Tokyo stores of all three chains and are dated above. Prices in the data table are placeholders until each bowl is bought and measured in-store; they are replaced with the actual paid price, chain, and store area at the field check, and anything that could not be confirmed in-store is labeled as general information rather than a measurement.
+- [Ichiran — official site (Japanese)](https://ichiran.com/)
+- [Ippudo — official site (Japanese)](https://www.ippudo.com/)
+- [Tenkaippin — official site (Japanese)](https://www.tenkaippin.co.jp/)
 
 <!-- FIELD CHECK TODO (delete before publishing):
+Prices in the data table were filled from official menu listings on 2026-11-29; replace each with the actual paid price at the visited store during the field check.
 Ichiran:
 - Photos: storefront sign / ticket machine and seat-availability board / order sheet (blank) / the bowl as served in the booth / receipt (ticket stub)
 - Measure: standard bowl price, kaedama price, egg price; note payment methods at the machine

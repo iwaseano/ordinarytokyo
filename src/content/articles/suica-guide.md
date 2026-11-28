@@ -17,14 +17,14 @@ measured:
     priceJpy: 500
     place: "JR East station, Tokyo"
     note: "Deposit per JR East's official Suica information (checked 2026-11-28); refunded in full when the card is returned — see the refund section"
-  - item: "Welcome Suica (initial charge example)"
-    priceJpy: 0
-    place: "To be measured at an airport or major station sales point"
-    note: "PLACEHOLDER — replace with measured value before publishing"
+  - item: "Welcome Suica (lowest purchase price, all of it usable balance)"
+    priceJpy: 1000
+    place: "Airport stations and JR EAST Travel Service Centers"
+    note: "Sold at 1,000 / 2,000 / 3,000 / 4,000 / 5,000 / 10,000 yen; the full amount is usable balance and there is no deposit (JR East official Welcome Suica page, checked 2026-11-28). Valid 28 days including the purchase day; balance is not refundable"
   - item: "Minimum charge amount at a ticket machine"
-    priceJpy: 0
-    place: "To be measured at a station ticket machine, Tokyo"
-    note: "PLACEHOLDER — replace with measured value before publishing"
+    priceJpy: 500
+    place: "JR East station ticket machine, Tokyo"
+    note: "Smallest charge denomination at JR East machines: 500 / 1,000 / 2,000 / 3,000 / 5,000 / 10,000 yen per operation, balance cap 20,000 yen (JR East official charge page, checked 2026-11-28)"
 phrasesAsked:
   - jp: "残高が不足しています"
     romaji: "Zandaka ga fusoku shite imasu"
@@ -93,7 +93,7 @@ phrasesSay:
 affiliateLinks: []
 faq:
   - question: "Suica, Welcome Suica, or Mobile Suica — which one should I get?"
-    answer: "If your iPhone supports it, Mobile Suica in Apple Wallet is the easiest: no deposit, charge by card, nothing to return. Welcome Suica is made for visitors — no deposit, sold at airports and major stations — but it expires after a set period and the balance is not refundable, so do not overcharge it. A regular physical Suica has a refundable deposit and no expiry worries, but availability of new physical cards has changed in recent years, so check the current situation when you arrive."
+    answer: "If your iPhone supports it, Mobile Suica in Apple Wallet is the easiest: no deposit, charge by card, nothing to return. Welcome Suica is made for visitors — no deposit, sold at airports and major stations — but it expires 28 days after purchase and the balance is not refundable, so do not overcharge it. A regular physical Suica has a refundable deposit and no expiry worries, but availability of new physical cards has changed in recent years, so check the current situation when you arrive."
   - question: "Can I use Suica outside Tokyo?"
     answer: "Yes, in most major cities. Suica is one of ten regional IC cards that are mutually compatible nationwide — Hokkaido's Kitaca, the Tokyo private railways' PASMO, Nagoya's TOICA and manaca, Osaka's ICOCA, Fukuoka's Hayakaken, Kyushu's SUGOCA and nimoca, and the others listed in the card-family section below. The name on the card changes by region; the tap works the same. Very local rural lines and buses may still be cash-only."
   - question: "What happens if my phone battery dies with Mobile Suica?"
@@ -111,7 +111,7 @@ If you learn one system on your first day in Tokyo, make it this one. Suica is t
 There are three ways visitors use Suica, and the right choice depends on your phone and how long you are staying.
 
 - **Mobile Suica (recommended if your phone supports it).** iPhone users can create a Suica directly in Apple Wallet and charge it with a registered card — no deposit, no machine, no queue at the airport. Android support depends on the device and where it was sold, so check before relying on it.
-- **Welcome Suica.** A visitor-only physical card sold at airports and major stations. No deposit to track, but two catches: it expires after a set period, and **any remaining balance is lost** — it cannot be refunded. Charge it in small amounts.
+- **Welcome Suica.** A visitor-only physical card sold at airports and major stations, at 1,000 to 10,000 yen with the full amount usable. No deposit to track, but two catches: it expires **28 days after purchase** (the purchase day counts), and **any remaining balance is lost** — it cannot be refunded. Charge it in small amounts.
 - **Regular physical Suica.** The same card Tokyo residents use. It carries a refundable **500-yen deposit** and the balance can be refunded (minus a fee) at the end of your trip. Note that sales of new physical cards were restricted for a period due to a chip shortage and the situation has changed more than once — treat availability as something to confirm on arrival, not a guarantee from an old guidebook.
 
 ## Step 2: Buy it and charge it
@@ -167,7 +167,7 @@ The gate line in a Tokyo station moves like a conveyor belt, and the etiquette e
 
 ## How locals actually use it
 
-For Tokyo residents, Suica is not a train card — it is the default small wallet. The morning coffee, the convenience store lunch, the vending machine drink on the platform, the locker at the station: all of it is one touch, and the physical card increasingly lives in a phone. Residents keep a few thousand yen on it at all times, charge it at the konbini with their lunch, and barely think about it. That invisibility is the point — the system is trusted because it works the same way, everywhere, every time.
+For Tokyo residents, Suica is not a train card — it is the default small wallet. The morning coffee, the convenience store lunch, the vending machine drink on the platform, the locker at the station: all of it is one touch, and the physical card increasingly lives in a phone. It reaches further than visitors expect, too: some game centers take it — Taito Station arcades accept Suica on many of their machines, and other chains have followed in places. Look for the e-money reader on the cabinet; where there is none, coins are still king. Residents keep a few thousand yen on it at all times, charge it at the konbini with their lunch, and barely think about it. That invisibility is the point — the system is trusted because it works the same way, everywhere, every time.
 
 ### Column: one card family, many names
 
