@@ -9,8 +9,8 @@ chain: []
 publishedAt: "2026-11-28"
 updatedAt: "2026-11-28"
 checkedAt: "2026-11-28"
-heroImage: "./images/hero.svg"
-heroAlt: "Illustration of a traveler showing a phone with a large Japanese phrase card to a shop clerk"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a speech bubble surrounded by everyday situations"
 draft: false
 measured:
   - item: "This phrase collection"

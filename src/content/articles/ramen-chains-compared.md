@@ -9,8 +9,8 @@ chain: [ichiran, ippudo, tenkaippin]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-29"
 checkedAt: "2026-11-29"
-heroImage: "./images/hero.svg"
-heroAlt: "Three bowls of ramen from different Japanese chains side by side on a counter"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of noodles lifted from a ramen bowl with chopsticks"
 draft: false
 measured:
   - item: "Natural Tonkotsu Ramen (standard bowl)"

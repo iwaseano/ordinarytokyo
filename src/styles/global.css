@@ -151,6 +151,7 @@ img {
 }
 
 .site-nav a,
+.site-search-link,
 .site-footer nav a {
 	display: inline-flex;
 	min-height: 44px;
@@ -158,6 +159,11 @@ img {
 	font-size: 0.92rem;
 	font-weight: 650;
 	text-decoration: none;
+}
+
+.site-search-link {
+	gap: 0.4rem;
+	white-space: nowrap;
 }
 
 .site-footer {
@@ -803,6 +809,7 @@ img {
 	}
 
 	.site-header nav {
+		order: 3;
 		width: 100%;
 		overflow-x: auto;
 	}

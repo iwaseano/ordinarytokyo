@@ -9,8 +9,8 @@ chain: []
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-29"
 checkedAt: "2026-11-29"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of a Tokyo station platform with passengers lined up at the door markings"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a train surrounded by station and travel symbols"
 draft: false
 measured:
   - item: "Cheapest JR East ride in central Tokyo (IC card)"
