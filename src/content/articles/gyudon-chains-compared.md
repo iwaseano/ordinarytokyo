@@ -125,7 +125,7 @@ phrasesSay:
     romaji: "Oishikatta desu"
     en: "It was delicious."
     situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
-affiliateLinks: []
+affiliateLinks: ["rakuten-yoshinoya-beef-bowl-set"]
 faq:
   - question: "Which gyudon chain is the cheapest?"
     answer: "The three are within a few dozen yen of each other for a regular beef bowl, and the ranking flips with promotions. Sukiya often wins on set deals and size options, Matsuya includes miso soup with most eat-in meals, and Yoshinoya keeps the plain bowl simple. Exact current prices are in the measured table above, checked in Tokyo."

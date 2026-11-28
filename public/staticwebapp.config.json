@@ -1,5 +1,26 @@
 {
-  "routes": [],
+  "routes": [
+    {
+      "route": "/go/rakuten-yoshinoya-beef-bowl-set/",
+      "redirect": "https://hb.afl.rakuten.co.jp/ichiba/5a10fd12.f0a89bb3.5a10fd13.1f7cb8c1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyoshinoya-shop%2F666964%2F&link_type=text&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJ0ZXh0Iiwic2l6ZSI6IjI0MHgyNDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
+      "statusCode": 302
+    },
+    {
+      "route": "/go/amazon-bulldog-tonkatsu-sauce/",
+      "redirect": "https://link.amazon/B02PYmNN9",
+      "statusCode": 302
+    },
+    {
+      "route": "/go/amazon-umaibo-assortment/",
+      "redirect": "https://link.amazon/B0bVDP85N",
+      "statusCode": 302
+    },
+    {
+      "route": "/go/amazon-itoen-oi-ocha/",
+      "redirect": "https://link.amazon/B07Fnz7Sx",
+      "statusCode": 302
+    }
+  ],
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "strict-origin-when-cross-origin",

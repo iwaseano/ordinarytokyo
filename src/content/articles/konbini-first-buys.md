@@ -107,7 +107,7 @@ phrasesSay:
     romaji: "Oishikatta desu"
     en: "It was delicious."
     situation: "The compliment to show or say as you pay or leave, ideally paired with gochisousama. Staff hear it as genuine praise, and it costs nothing."
-affiliateLinks: []
+affiliateLinks: ["amazon-umaibo-assortment","amazon-itoen-oi-ocha"]
 faq:
   - question: "If I can only buy three things on my first visit, what should they be?"
     answer: "A salmon or tuna-mayo onigiri, an egg sandwich, and a bottle of unsweetened green tea. That combination is the everyday breakfast or light lunch of a huge number of Tokyo workers, it costs very little, and it shows you the quality baseline that makes people trust these stores."
