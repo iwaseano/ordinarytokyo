@@ -9,8 +9,8 @@ chain: [katsuya, matsunoya, katsuan]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
-heroImage: "./images/hero.svg"
-heroAlt: "Three katsudon chain storefronts in Tokyo: Katsuya, Matsunoya, and Katsuan"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a pork cutlet over a bowl of rice"
 draft: false
 measured:
   - item: "Katsudon (standard, takeout or eat-in)"

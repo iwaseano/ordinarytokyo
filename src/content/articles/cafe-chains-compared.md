@@ -9,8 +9,8 @@ chain: [doutor, komeda, starbucks, tullys, renoir, excelsior, pronto]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of Japanese cafe interiors side by side: a quick station-front counter, a retro brick coffee house, a modern cafe window seat, and a cafe that turns into a bar at night"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a coffee cup surrounded by cafe items"
 draft: false
 measured:
   - item: "Blend coffee (S size)"

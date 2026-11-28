@@ -9,8 +9,8 @@ chain: [sushiro, kura-sushi, hama-sushi]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
 checkedAt: "2026-11-28"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of a conveyor-belt sushi restaurant with plates moving past counter seats"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of sushi plates on a conveyor belt"
 draft: false
 measured:
   - item: "Standard sushi plate (two pieces, weekday base price)"

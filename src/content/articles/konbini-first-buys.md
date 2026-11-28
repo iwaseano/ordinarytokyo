@@ -9,8 +9,8 @@ chain: [seven-eleven, familymart, lawson]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
 checkedAt: "2026-11-28"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of convenience store shelves with onigiri, sandwiches, drinks, and snacks"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a shopping basket surrounded by convenience store items"
 draft: false
 measured:
   - item: "Onigiri (salmon)"
