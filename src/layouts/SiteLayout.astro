@@ -18,6 +18,7 @@ const {
 const canonicalUrl = new URL(canonicalPath, SITE.url).toString();
 const gaId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID;
 const verification = import.meta.env.PUBLIC_GSC_VERIFICATION;
+const cmpScriptAttributes = { nowprocket: true, 'seraph-accel-crit': '1' };
 ---
 
 <!doctype html>
@@ -28,6 +29,15 @@ const verification = import.meta.env.PUBLIC_GSC_VERIFICATION;
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
+		</script>
+		<script is:inline {...cmpScriptAttributes} data-noptimize="1" data-cfasync="false" data-wpfc-render="false" data-no-defer="1" data-cmp-ab="2">
+			(function () {
+				var script = document.createElement("script");
+				script.async = 1;
+				script.setAttribute("data-cmp-ab","2");
+				script.src = 'https://emrldtp.com/NjA3OTAw.js?t=607900';
+				document.head.appendChild(script);
+			})();
 		</script>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
