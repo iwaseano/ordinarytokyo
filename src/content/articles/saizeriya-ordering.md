@@ -9,8 +9,8 @@ chain: [saizeriya]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of a Saizeriya table with a QR code card, smartphone, Milano-style doria, and drink bar cup"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a plate with cutlery surrounded by restaurant items"
 draft: false
 measured:
   - item: "Milano-style doria (signature rice gratin)"

@@ -9,8 +9,8 @@ chain: [tenya]
 publishedAt: "2026-11-28"
 updatedAt: "2026-11-28"
 checkedAt: "2026-11-28"
-heroImage: "./images/hero.svg"
-heroAlt: "A tendon bowl with shrimp and vegetable tempura over rice, next to a small bowl of miso soup"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a tempura rice bowl with chopsticks"
 draft: false
 measured:
   - item: "Ganso Tenya no Tendon (the original bowl: shrimp, kisu, squid, eggplant, green beans)"

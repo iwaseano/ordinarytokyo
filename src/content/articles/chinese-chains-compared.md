@@ -9,8 +9,8 @@ chain: [gyoza-no-ohsho, osaka-ohsho, hidakaya, bamiyan]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
-heroImage: "./images/hero.svg"
-heroAlt: "Placeholder illustration of three Japanese Chinese restaurant storefronts"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of gyoza on a plate surrounded by Chinese restaurant items"
 draft: false
 measured:
   - item: "Gyoza (6 pieces, one serving)"

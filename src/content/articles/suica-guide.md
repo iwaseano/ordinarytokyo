@@ -9,8 +9,8 @@ chain: []
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
 checkedAt: "2026-11-28"
-heroImage: "./images/hero.svg"
-heroAlt: "Illustration of a traveler tapping an IC card at a station ticket gate"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a contactless card surrounded by train and station symbols"
 draft: false
 measured:
   - item: "Physical Suica card (deposit)"

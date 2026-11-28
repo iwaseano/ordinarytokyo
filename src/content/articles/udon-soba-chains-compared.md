@@ -9,8 +9,8 @@ chain: [marugame-seimen, hanamaru-udon, fuji-soba]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-28"
 checkedAt: "2026-11-28"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of a self-service udon counter with tempura trays and a standing soba bar"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of noodles lifted from a bowl with chopsticks"
 draft: false
 measured:
   - item: "Kake udon (regular)"

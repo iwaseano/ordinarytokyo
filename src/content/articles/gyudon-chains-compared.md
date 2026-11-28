@@ -9,8 +9,8 @@ chain: [yoshinoya, matsuya, sukiya, nakau]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of three beef bowl restaurant counters side by side"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of a steaming beef bowl with chopsticks"
 draft: false
 measured:
   - item: "Gyudon (regular size)"

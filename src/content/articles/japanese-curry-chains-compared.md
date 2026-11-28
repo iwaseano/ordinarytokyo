@@ -9,8 +9,8 @@ chain: [coco-ichibanya, gogo-curry, my-curry-shokudo, hinoya-curry]
 publishedAt: "2026-11-26"
 updatedAt: "2026-11-26"
 checkedAt: "2026-11-26"
-heroImage: "./images/hero.svg"
-heroAlt: "Editorial illustration of four Japanese curry plates side by side, each in a different chain's style"
+heroImage: "./images/hero.webp"
+heroAlt: "Illustration of Japanese curry and rice on a plate"
 draft: false
 measured:
   - item: "Pork curry (standard, 300g rice, default spice)"
